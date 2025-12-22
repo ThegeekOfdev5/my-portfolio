@@ -1,0 +1,24 @@
+{
+  "name": "frederic-samuel-koffi-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio professionnel de Frédéric Samuel Koffi - Full Stack Developer",
+  "main": "app.js",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "serve": "python -m http.server 8000",
+    "start": "python -m http.server 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "laravel",
+    "php",
+    "full-stack"
+  ],
+  "author": "Frédéric Samuel Koffi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThegeekOfdev5/my-portfolio"
+  }
+}

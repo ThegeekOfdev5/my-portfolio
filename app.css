@@ -3,65 +3,152 @@
 
 /* Enhanced keyframes for modern animations */
 @keyframes gradient-x {
-    0%, 100% { transform: translateX(-100%); }
-    50% { transform: translateX(100%); }
+  0%,
+  100% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(3deg); }
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(3deg);
+  }
 }
 
 @keyframes glow {
-    0% { box-shadow: 0 0 20px rgba(14, 165, 233, 0.3); }
-    100% { box-shadow: 0 0 30px rgba(14, 165, 233, 0.6); }
+  0% {
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(14, 165, 233, 0.6);
+  }
 }
 
 @keyframes fade-up {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes scale-up {
-    from { transform: scale(0.95); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* Glass morphism utility */
 .glass {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Screen reader accessibility utility */
 .sr-only {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
-    white-space: nowrap !important;
-    border: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
 /* Accessibility: Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
+/* Dark Mode Support for Technical Grid Elements */
+.tech-marker {
+  background-color: white;
+  border-color: #cbd5e1;
+  transition: all 0.3s ease;
+}
+
+:root.dark .tech-marker {
+  background-color: #334155;
+  border-color: #475569;
+}
+
+.tech-line-h,
+.tech-line-v-top,
+.tech-line-v-bottom {
+  transition: background-color 0.3s ease;
+}
+
+:root.dark .tech-line-h,
+:root.dark .tech-line-v-top {
+  background-color: #475569;
+}
+
+:root.dark .tech-line-v-bottom {
+  background: linear-gradient(to bottom, #475569, transparent);
+}
+
+/* Door Container Dark Mode */
+:root.dark .door-frame-outer {
+  background-color: #1e293b;
+  border-color: #475569;
+}
+
+:root.dark .door-panel {
+  background-color: #0f172a;
+  border-color: #334155;
+}
+
+:root.dark .carving-shape {
+  fill: #64748b;
+}
+
+:root.dark .carving-eye {
+  fill: #1e293b;
+}
+
+:root.dark .carving-tusk {
+  stroke: #cbd5e1;
+}
+
+:root.dark .door-message {
+  color: #94a3b8;
+}
+
+/* Typing Animation Dark Mode */
+:root.dark .typing-text {
+  color: #fed7aa;
+}
+
+:root.dark .cursor {
+  color: #fed7aa;
+}
+
+/* Tech Grid SVG Dark Mode */
+:root.dark .ant-circuit-lines {
+  stroke: #94a3b8;
+}
