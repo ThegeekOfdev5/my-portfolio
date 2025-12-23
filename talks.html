@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Talks & Speaking Engagements | Frédéric Samuel Koffi</title>
+    <title>Mes Projets | Frédéric Samuel Koffi</title>
 
     <!-- Performance and Security -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,30 +14,24 @@
     <meta http-equiv="Permissions-Policy" content="interest-cohort()" />
 
     <!-- Primary Meta Tags -->
-    <meta
-      name="title"
-      content="Talks & Speaking Engagements | Frédéric Samuel Koffi"
-    />
+    <meta name="title" content="Mes Projets | Frédéric Samuel Koffi" />
     <meta
       name="description"
-      content="Conference talks and speaking engagements by Frédéric Samuel Koffi on Laravel, PHP, and modern development."
+      content="Découvrez mes projets open source et mes applications développées en Laravel, PHP, TypeScript et plus."
     />
     <meta
       name="keywords"
-      content="Laravel Talks, PHP Conference, Developer Speaker, Laravel, JavaScript, Web Development, Speaking Engagements"
+      content="GitHub Projects, Laravel, PHP, TypeScript, Web Development, Open Source"
     />
     <meta name="author" content="Frédéric Samuel Koffi" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://thegeekofdev.netlify.app/talks" />
-    <meta
-      property="og:title"
-      content="Talks & Speaking Engagements | Frédéric Samuel Koffi"
-    />
+    <meta property="og:title" content="Mes Projets | Frédéric Samuel Koffi" />
     <meta
       property="og:description"
-      content="Conference talks and speaking engagements by Frédéric Samuel Koffi on modern development."
+      content="Projets GitHub de Frédéric Samuel Koffi"
     />
     <meta
       property="og:image"
@@ -49,86 +43,15 @@
     <meta name="twitter:site" content="@samuelKoffi86922" />
     <meta name="twitter:creator" content="@samuelKoffi86922" />
     <meta name="twitter:url" content="https://thegeekofdev.netlify.app/talks" />
-    <meta
-      name="twitter:title"
-      content="Talks & Speaking Engagements | Frédéric Samuel Koffi"
-    />
+    <meta name="twitter:title" content="Mes Projets | Frédéric Samuel Koffi" />
     <meta
       name="twitter:description"
-      content="Conference talks and speaking engagements by Frédéric Samuel Koffi on modern development."
+      content="Projets GitHub de Frédéric Samuel Koffi"
     />
     <meta
       name="twitter:image"
       content="https://thegeekofdev.netlify.app/og-image-mrpunyapal.jpg"
     />
-
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfilePage",
-        "mainEntity": {
-          "@type": "Person",
-          "name": "Frédéric Samuel Koffi",
-          "url": "https://thegeekofdev.netlify.app",
-          "performerIn": [
-            {
-              "@type": "Event",
-              "name": "Types in PHP at Glance with PHPStan",
-              "description": "An exploration of PHP's type system and how PHPStan helps catch bugs before they reach production.",
-              "organizer": [
-                { "@type": "Organization", "name": "Laravel Ahmedabad" },
-                { "@type": "Organization", "name": "Laravel Indore" },
-                { "@type": "Organization", "name": "Laravel Kozhikode" }
-              ],
-              "location": [
-                { "@type": "Place", "name": "Ahmedabad, India" },
-                { "@type": "Place", "name": "Indore, India" },
-                { "@type": "Place", "name": "Kozhikode, India" }
-              ]
-            },
-            {
-              "@type": "Event",
-              "name": "Refactor Laravel with RectorPHP",
-              "description": "Learn how to leverage RectorPHP for automated refactoring in Laravel applications.",
-              "organizer": [
-                { "@type": "Organization", "name": "Laravel Bangalore" },
-                { "@type": "Organization", "name": "Laravel Moris" }
-              ],
-              "location": [
-                { "@type": "Place", "name": "Bangalore, India" },
-                { "@type": "Place", "name": "Mauritius, Africa" }
-              ],
-              "recordedIn": {
-                "@type": "VideoObject",
-                "name": "Refactor Laravel with RectorPHP - Video Recording",
-                "url": "https://youtube.com/live/N73Smm8ldCc"
-              }
-            },
-            {
-              "@type": "Event",
-              "name": "Spark Your Laravel Apps with FilamentPHP",
-              "description": "A comprehensive introduction to FilamentPHP, the elegant admin panel for Laravel.",
-              "organizer": {
-                "@type": "Organization",
-                "name": "Laravel Ahmedabad"
-              },
-              "location": { "@type": "Place", "name": "Ahmedabad, India" }
-            },
-            {
-              "@type": "Event",
-              "name": "Broadcasting in Laravel",
-              "description": "Dive into real-time features with Laravel Broadcasting and WebSockets.",
-              "organizer": {
-                "@type": "Organization",
-                "name": "Laravel Ahmedabad"
-              },
-              "location": { "@type": "Place", "name": "Ahmedabad, India" }
-            }
-          ]
-        }
-      }
-    </script>
 
     <!-- Favicon and Icons -->
     <link rel="icon" href="/favicon.png" type="image/png" />
@@ -149,734 +72,496 @@
       @keyframes fade-up {
         from {
           opacity: 0;
-          transform: translateY(30px);
+          transform: translateY(20px);
         }
-
         to {
           opacity: 1;
           transform: translateY(0);
         }
       }
 
-      @keyframes scale-up {
-        from {
-          transform: scale(0.95);
-          opacity: 0;
-        }
-
-        to {
-          transform: scale(1);
-          opacity: 1;
-        }
-      }
-
       body {
-        background: #f8fafc;
-        color: #1e293b;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          sans-serif;
+        animation: fade-up 0.6s ease-out;
       }
 
-      .talk-card {
-        background: white;
-        border: 1px solid #e2e8f0;
-        border-radius: 1rem;
-        transition: all 0.3s ease;
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
-          0 1px 2px -1px rgba(0, 0, 0, 0.1);
-      }
-
-      .talk-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-          0 4px 6px -4px rgba(0, 0, 0, 0.1);
-        border-color: #cbd5e1;
-      }
-
-      .back-link {
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-        border: 1px solid rgba(255, 255, 255, 0.4);
-        border-radius: 9999px;
-        transition: all 0.3s ease;
-        text-decoration: none;
-      }
-
-      .back-link:hover {
-        background: white;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        transform: translateY(-1px);
-      }
-
-      .video-link {
-        background: linear-gradient(135deg, #dc2626, #b91c1c);
-        color: white;
-        padding: 0.75rem;
-        border-radius: 0.5rem;
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        transition: all 0.3s ease;
-        font-weight: 600;
-      }
-
-      .video-link:hover {
-        background: linear-gradient(135deg, #b91c1c, #991b1b);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
-      }
-
-      /* Improve mobile spacing */
-      @media (max-width: 640px) {
-        .talk-card {
-          padding: 1rem;
-        }
-
-        .talk-card h2 {
-          font-size: 1.25rem;
-        }
-      }
-
-      /* Technical Grid Markers */
-      .tech-marker {
-        position: absolute;
-        width: 7px;
-        height: 7px;
-        background-color: white;
-        border: 1px solid #cbd5e1;
-        border-radius: 50%;
-        z-index: 50;
-        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
-      }
-
-      /* Infinite Grid Lines */
       .tech-line-h {
-        position: absolute;
         height: 1px;
-        background-color: #e2e8f0;
-        z-index: 0;
-        pointer-events: none;
-        width: 300vw;
-        left: 50%;
-        transform: translateX(-50%);
+        background: linear-gradient(
+          to right,
+          transparent,
+          rgba(148, 163, 184, 0.2),
+          transparent
+        );
       }
 
-      .tech-line-v-top {
-        position: absolute;
-        width: 1px;
-        background-color: #e2e8f0;
-        z-index: 0;
-        pointer-events: none;
-        bottom: 100%;
-        height: 100vh;
-      }
-
-      .tech-line-v-bottom {
-        position: absolute;
-        width: 1px;
-        background: linear-gradient(to bottom, #e2e8f0, transparent);
-        z-index: 0;
-        pointer-events: none;
-        top: 100%;
-        height: 120px;
+      .tech-marker {
+        width: 6px;
+        height: 6px;
+        background: #94a3b8;
+        border-radius: 50%;
       }
     </style>
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://thegeekofdev.netlify.app/talks" />
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
-        darkMode: 'class',
         theme: {
           extend: {
             colors: {
-              primary: {
-                50: '#f0f9ff',
-                100: '#e0f2fe',
-                500: '#0ea5e9',
-                600: '#0284c7',
-                700: '#0369a1',
-                900: '#0c4a6e',
+              slate: {
+                50: '#f8fafc',
+                100: '#f1f5f9',
+                200: '#e2e8f0',
+                300: '#cbd5e1',
+                400: '#94a3b8',
+                500: '#64748b',
+                600: '#475569',
+                700: '#334155',
+                800: '#1e293b',
+                900: '#0f172a',
               },
-            },
-            fontFamily: {
-              sans: ['Inter', 'system-ui', 'sans-serif'],
-            },
-            animation: {
-              'fade-up': 'fade-up 0.6s ease-out',
-              'scale-up': 'scale-up 0.3s ease-out',
             },
           },
         },
       };
     </script>
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaNC8YdfZpUWFA/LWuYzaDHN1+ rojLEPF/royJT4MAKE0VavvCst態56xMg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="/app.css" />
   </head>
 
   <body
-    class="font-sans m-0 p-0 min-h-screen bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 leading-relaxed relative overflow-x-hidden antialiased transition-colors duration-300"
+    class="dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300"
   >
-    <!-- Theme Toggle Button -->
-    <div class="fixed top-4 right-4 z-50">
-      <button
-        id="themeToggle"
-        class="w-12 h-12 rounded-full border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors"
-        aria-label="Toggle dark mode"
-      >
-        <i class="fas fa-moon text-slate-600 dark:hidden"></i>
-        <i class="fas fa-sun text-yellow-500 hidden dark:inline-block"></i>
-      </button>
-    </div>
-
-    <!-- Main Content -->
     <main
-      class="min-h-screen flex flex-col items-center justify-center p-2 sm:p-8"
+      class="relative min-h-screen w-full dark:bg-slate-900 bg-slate-50 transition-colors duration-300"
     >
+      <!-- Navigation / Back Link -->
       <div
-        class="w-full max-w-5xl border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md relative z-10 transition-colors duration-300"
+        class="relative w-full max-w-5xl mx-auto px-4 sm:px-8 pt-8 pb-4 z-20 flex justify-between items-center"
       >
-        <!-- Tech Markers: Corners -->
-        <div
-          class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -top-[4px] -left-[4px]"
-        ></div>
-        <div
-          class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -top-[4px] -right-[4px]"
-        ></div>
-        <div
-          class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -left-[4px]"
-        ></div>
-        <div
-          class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -right-[4px]"
-        ></div>
-
-        <!-- Global Extensions -->
-        <div
-          class="tech-line-h bg-slate-200 dark:bg-slate-700 top-[-1px]"
-        ></div>
-        <div
-          class="tech-line-h bg-slate-200 dark:bg-slate-700 bottom-[-1px]"
-        ></div>
-
-        <div
-          class="tech-line-v-top bg-slate-200 dark:bg-slate-700 left-[-1px]"
-        ></div>
-        <div
-          class="tech-line-v-top bg-slate-200 dark:bg-slate-700 right-[-1px]"
-        ></div>
-
-        <div
-          class="tech-line-v-bottom bg-slate-200 dark:bg-slate-700 left-[-1px]"
-        ></div>
-        <div
-          class="tech-line-v-bottom bg-slate-200 dark:bg-slate-700 right-[-1px]"
-        ></div>
-        <!-- Header Section -->
-        <div
-          class="p-4 sm:p-12 border-b border-slate-200 dark:border-slate-700 relative transition-colors duration-300"
+        <a
+          href="/index.html"
+          class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
         >
-          <!-- Horizontal Line Extension -->
-          <div
-            class="tech-line-h bg-slate-200 dark:bg-slate-700 bottom-[-1px]"
-          ></div>
+          <i class="fas fa-arrow-left"></i>
+          <span>Back to Home</span>
+        </a>
+      </div>
 
-          <!-- Intersections -->
+      <!-- Header Section -->
+      <div class="relative w-full max-w-5xl mx-auto px-4 sm:px-8 py-12">
+        <h1
+          class="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-4"
+        >
+          Mes Projets
+        </h1>
+        <p class="text-lg text-slate-600 dark:text-slate-400">
+          Découvrez mes applications et contributions open source
+        </p>
+      </div>
+
+      <!-- Projects Grid Section -->
+      <div class="relative w-full max-w-5xl mx-auto px-4 sm:px-8 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Project Card 1 -->
           <div
-            class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -left-[4px]"
-          ></div>
-          <div
-            class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -right-[4px]"
-          ></div>
-          <!-- Back to Home Link -->
-          <a
-            href="/index.html"
-            class="print:hidden absolute top-4 right-16 sm:top-8 sm:right-16 inline-flex items-center gap-2 px-3 py-1.5 text-xs font-medium uppercase tracking-wider border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 hover:border-slate-300 transition-colors text-slate-600 dark:text-slate-400 rounded z-20 animate-fade-up\"
+            class="group relative bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md dark:shadow-lg hover:shadow-lg dark:hover:shadow-xl transition-shadow border border-slate-200 dark:border-slate-700"
           >
-            <i class="fas fa-arrow-left" aria-hidden="true"></i>
-            <span class="hidden sm:inline">Back to Home</span>
-            <span class="sm:hidden">Back</span>
-          </a>
-
-          <div class="animate-fade-up" style="animation-delay: 0.1s">
-            <h1
-              class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4 tracking-tight"
+            <div
+              class="w-full h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white text-xl font-bold"
             >
-              Talks & Speaking
-            </h1>
-            <p class="text-lg text-red-600 dark:text-red-500 max-w-2xl">
-              Sharing knowledge and experiences with the community.
-            </p>
+              Portfolio
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <i
+                  class="fas fa-code text-blue-600 dark:text-blue-400 text-lg"
+                ></i>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                  my-portfolio
+                </h3>
+              </div>
+              <span
+                class="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-xs font-medium mb-3"
+                >HTML</span
+              >
+              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
+                Mon portefeuille personnel et ma page de présentation
+              </p>
+              <p class="text-xs text-slate-500 dark:text-slate-500">
+                Mis à jour récemment
+              </p>
+            </div>
           </div>
-        </div>
 
-        <!-- Talks Grid Section -->
-        <div
-          class="p-4 sm:p-12 relative bg-white dark:bg-slate-800/50 transition-colors duration-300"
-        >
-          <h2
-            class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6"
-          >
-            Speaking Log
-          </h2>
-
+          <!-- Project Card 2 -->
           <div
-            class="grid grid-cols-1 md:grid-cols-2 border-t border-l border-slate-200"
+            class="group relative bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md dark:shadow-lg hover:shadow-lg dark:hover:shadow-xl transition-shadow border border-slate-200 dark:border-slate-700"
           >
-            <!-- Talk: PestPHP (Featured) -->
             <div
-              class="group relative p-4 sm:p-8 bg-white border-r border-b border-slate-200 hover:bg-slate-50 transition-colors duration-300 animate-fade-up md:col-span-2"
-              style="animation-delay: 0.1s"
+              class="w-full h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-white text-xl font-bold"
             >
-              <!-- TL Marker (Gray) -->
-              <div
-                class="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-4 h-4 text-slate-200 bg-white z-10"
-              >
-                <svg
-                  class="w-full h-full"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 0V12M0 6H12"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </div>
-              <!-- TR Marker (Gray) -->
-              <div
-                class="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-4 h-4 text-slate-200 bg-white z-10 hidden md:block"
-              >
-                <svg
-                  class="w-full h-full"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 0V12M0 6H12"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </div>
-
-              <div class="flex flex-col h-full">
-                <div class="mb-4">
-                  <div class="flex flex-wrap gap-2 mb-4">
-                    <a
-                      href="https://x.com/LaravelAhm"
-                      target="_blank"
-                      class="inline-flex items-center gap-1 px-2 py-1 bg-white text-slate-600 hover:text-red-600 hover:border-red-200 rounded text-xs font-medium border border-slate-200 transition-colors"
-                    >
-                      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                      Ahmedabad
-                    </a>
-                  </div>
-                  <h3
-                    class="text-xl md:text-2xl font-bold text-slate-900 mb-2 group-hover:text-red-600 transition-colors"
-                  >
-                    From Zero to Tested: Laravel + PestPHP
-                  </h3>
-                  <p
-                    class="text-sm md:text-base text-slate-600 leading-relaxed max-w-3xl"
-                  >
-                    A practical guide to getting started with testing in Laravel
-                    using PestPHP. Learn how to write expressive tests and build
-                    robust applications with confidence.
-                  </p>
-                </div>
-                <div class="mt-auto pt-4 flex items-center justify-end">
-                  <a
-                    href="https://github.com/MrPunyapal/pest-talk"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-slate-400 hover:text-slate-900 transition-colors"
-                  >
-                    <i class="fab fa-github text-lg"></i>
-                  </a>
-                </div>
-              </div>
+              E-Commerce
             </div>
-
-            <!-- Talk 1: Types in PHP -->
-            <div
-              class="group relative p-4 sm:p-8 bg-white border-r border-b border-slate-200 hover:bg-slate-50 transition-colors duration-300 animate-fade-up"
-              style="animation-delay: 0.2s"
-            >
-              <!-- TL Marker (Gray) -->
-              <div
-                class="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-4 h-4 text-slate-200 bg-white z-10"
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <i
+                  class="fas fa-shopping-cart text-green-600 dark:text-green-400 text-lg"
+                ></i>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                  e-commerce
+                </h3>
+              </div>
+              <span
+                class="inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-xs font-medium mb-3"
+                >PHP</span
               >
-                <svg
-                  class="w-full h-full"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 0V12M0 6H12"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </div>
-
-              <div class="flex flex-col h-full">
-                <div class="mb-4">
-                  <div class="flex flex-wrap gap-2 mb-4">
-                    <a
-                      href="https://x.com/LaravelAhm"
-                      target="_blank"
-                      class="inline-flex items-center gap-1 px-2 py-1 bg-white text-slate-600 hover:text-red-600 hover:border-red-200 rounded text-xs font-medium border border-slate-200 transition-colors"
-                    >
-                      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                      Ahmedabad
-                    </a>
-                    <a
-                      href="https://x.com/LaravelIndore"
-                      target="_blank"
-                      class="inline-flex items-center gap-1 px-2 py-1 bg-white text-slate-600 hover:text-red-600 hover:border-red-200 rounded text-xs font-medium border border-slate-200 transition-colors"
-                    >
-                      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                      Indore
-                    </a>
-                    <a
-                      href="https://x.com/laravel_kkd"
-                      target="_blank"
-                      class="inline-flex items-center gap-1 px-2 py-1 bg-white text-slate-600 hover:text-red-600 hover:border-red-200 rounded text-xs font-medium border border-slate-200 transition-colors"
-                    >
-                      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                      Kozhikode
-                    </a>
-                  </div>
-                  <h3
-                    class="text-xl font-bold text-slate-900 mb-2 group-hover:text-red-600 transition-colors"
-                  >
-                    Types in PHP at Glance with PHPStan
-                  </h3>
-                  <p class="text-sm text-slate-600 leading-relaxed">
-                    An exploration of PHP's type system and how PHPStan helps
-                    catch bugs before they reach production.
-                  </p>
-                </div>
-                <div class="mt-auto pt-4 flex items-center justify-end">
-                  <a
-                    href="https://gist.github.com/MrPunyapal/139779b743eec108a292de95b3f958f8"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-slate-400 hover:text-slate-900 transition-colors"
-                  >
-                    <i class="fab fa-github text-lg"></i>
-                  </a>
-                </div>
-              </div>
+              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
+                Application e-commerce complète avec gestion des produits
+              </p>
+              <p class="text-xs text-slate-500 dark:text-slate-500">
+                Mis à jour il y a 4 jours
+              </p>
             </div>
+          </div>
 
-            <!-- Talk 2: RectorPHP -->
+          <!-- Project Card 3 -->
+          <div
+            class="group relative bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md dark:shadow-lg hover:shadow-lg dark:hover:shadow-xl transition-shadow border border-slate-200 dark:border-slate-700"
+          >
             <div
-              class="group relative p-4 sm:p-8 bg-white border-r border-b border-slate-200 hover:bg-slate-50 transition-colors duration-300 animate-fade-up"
-              style="animation-delay: 0.3s"
+              class="w-full h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center text-white text-xl font-bold"
             >
-              <!-- TL Marker (Gray) -->
-              <div
-                class="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-4 h-4 text-slate-200 bg-white z-10"
-              >
-                <svg
-                  class="w-full h-full"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 0V12M0 6H12"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </div>
-              <!-- TR Marker (Gray) -->
-              <div
-                class="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-4 h-4 text-slate-200 bg-white z-10 hidden md:block"
-              >
-                <svg
-                  class="w-full h-full"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 0V12M0 6H12"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </div>
-              <!-- BR Marker (Gray) -->
-              <div
-                class="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-4 h-4 text-slate-200 bg-white z-10 hidden md:block"
-              >
-                <svg
-                  class="w-full h-full"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 0V12M0 6H12"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </div>
-
-              <div class="flex flex-col h-full">
-                <div class="mb-4">
-                  <div class="flex flex-wrap gap-2 mb-4">
-                    <a
-                      href="https://x.com/LaravelBLR"
-                      target="_blank"
-                      class="inline-flex items-center gap-1 px-2 py-1 bg-white text-slate-600 hover:text-red-600 hover:border-red-200 rounded text-xs font-medium border border-slate-200 transition-colors"
-                    >
-                      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                      Bangalore
-                    </a>
-                    <a
-                      href="https://x.com/laravelphpmoris"
-                      target="_blank"
-                      class="inline-flex items-center gap-1 px-2 py-1 bg-white text-slate-600 hover:text-red-600 hover:border-red-200 rounded text-xs font-medium border border-slate-200 transition-colors"
-                    >
-                      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                      Mauritius
-                    </a>
-                  </div>
-                  <h3
-                    class="text-xl font-bold text-slate-900 mb-2 group-hover:text-red-600 transition-colors"
-                  >
-                    Refactor Laravel with RectorPHP
-                  </h3>
-                  <p class="text-sm text-slate-600 leading-relaxed">
-                    Learn how to leverage RectorPHP for automated refactoring in
-                    Laravel applications.
-                  </p>
-                </div>
-                <div class="mt-auto pt-4 flex items-center justify-end">
-                  <div class="flex gap-3">
-                    <a
-                      href="https://youtube.com/live/N73Smm8ldCc"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-slate-400 hover:text-red-600 transition-colors"
-                    >
-                      <i class="fab fa-youtube text-lg"></i>
-                    </a>
-                    <a
-                      href="https://github.com/MrPunyapal/laravel-rectorphp"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-slate-400 hover:text-slate-900 transition-colors"
-                    >
-                      <i class="fab fa-github text-lg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
+              ERP SaaS
             </div>
-
-            <!-- Talk 3: FilamentPHP -->
-            <div
-              class="group relative p-4 sm:p-8 bg-white border-r border-b border-slate-200 hover:bg-slate-50 transition-colors duration-300 animate-fade-up"
-              style="animation-delay: 0.4s"
-            >
-              <!-- TL Marker (Gray) -->
-              <div
-                class="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-4 h-4 text-slate-200 bg-white z-10"
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <i
+                  class="fas fa-calculator text-purple-600 dark:text-purple-400 text-lg"
+                ></i>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                  erpsaas
+                </h3>
+              </div>
+              <span
+                class="inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-xs font-medium mb-3"
+                >PHP</span
               >
-                <svg
-                  class="w-full h-full"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 0V12M0 6H12"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </div>
-              <!-- BL Marker (Gray) -->
-              <div
-                class="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 w-4 h-4 text-slate-200 bg-white z-10 hidden md:block"
-              >
-                <svg
-                  class="w-full h-full"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 0V12M0 6H12"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </div>
-              <!-- BR Marker (Gray) -->
-              <div
-                class="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-4 h-4 text-slate-200 bg-white z-10 hidden md:block"
-              >
-                <svg
-                  class="w-full h-full"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 0V12M0 6H12"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </div>
-
-              <div class="flex flex-col h-full">
-                <div class="mb-4">
-                  <div class="flex flex-wrap gap-2 mb-4">
-                    <a
-                      href="https://x.com/LaravelAhm"
-                      target="_blank"
-                      class="inline-flex items-center gap-1 px-2 py-1 bg-white text-slate-600 hover:text-red-600 hover:border-red-200 rounded text-xs font-medium border border-slate-200 transition-colors"
-                    >
-                      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                      Ahmedabad
-                    </a>
-                  </div>
-                  <h3
-                    class="text-xl font-bold text-slate-900 mb-2 group-hover:text-red-600 transition-colors"
-                  >
-                    Spark Your Laravel Apps with FilamentPHP
-                  </h3>
-                  <p class="text-sm text-slate-600 leading-relaxed">
-                    A comprehensive introduction to FilamentPHP, the elegant
-                    admin panel for Laravel.
-                  </p>
-                </div>
-                <div class="mt-auto pt-4 flex items-center justify-end">
-                  <a
-                    href="https://github.com/MrPunyapal/filament-demo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-slate-400 hover:text-slate-900 transition-colors"
-                  >
-                    <i class="fab fa-github text-lg"></i>
-                  </a>
-                </div>
-              </div>
+              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
+                Plateforme comptable Laravel et Filament pour la gestion
+                financière
+              </p>
+              <p class="text-xs text-slate-500 dark:text-slate-500">
+                Mis à jour le 8 juillet 2024
+              </p>
             </div>
+          </div>
 
-            <!-- Talk 4: Broadcasting -->
+          <!-- Project Card 4 -->
+          <div
+            class="group relative bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md dark:shadow-lg hover:shadow-lg dark:hover:shadow-xl transition-shadow border border-slate-200 dark:border-slate-700"
+          >
             <div
-              class="group relative p-4 sm:p-8 bg-white border-r border-b border-slate-200 hover:bg-slate-50 transition-colors duration-300 animate-fade-up"
-              style="animation-delay: 0.5s"
+              class="w-full h-48 bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center text-white text-xl font-bold"
             >
-              <!-- TL Marker (Gray) -->
-              <div
-                class="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-4 h-4 text-slate-200 bg-white z-10"
-              >
-                <svg
-                  class="w-full h-full"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 0V12M0 6H12"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  />
-                </svg>
+              Microservices
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <i
+                  class="fas fa-cubes text-orange-600 dark:text-orange-400 text-lg"
+                ></i>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                  microservices-ecommerce
+                </h3>
               </div>
-              <!-- BR Marker (Gray) -->
-              <div
-                class="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-4 h-4 text-slate-200 bg-white z-10 hidden md:block"
+              <span
+                class="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-xs font-medium mb-3"
+                >TypeScript</span
               >
-                <svg
-                  class="w-full h-full"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 0V12M0 6H12"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </div>
+              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
+                Architecture microservices pour une plateforme e-commerce
+                moderne
+              </p>
+              <p class="text-xs text-slate-500 dark:text-slate-500">
+                Mis à jour le 25 septembre
+              </p>
+            </div>
+          </div>
 
-              <div class="flex flex-col h-full">
-                <div class="mb-4">
-                  <div class="flex flex-wrap gap-2 mb-4">
-                    <a
-                      href="https://x.com/LaravelAhm"
-                      target="_blank"
-                      class="inline-flex items-center gap-1 px-2 py-1 bg-white text-slate-600 hover:text-red-600 hover:border-red-200 rounded text-xs font-medium border border-slate-200 transition-colors"
-                    >
-                      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                      Ahmedabad
-                    </a>
-                  </div>
-                  <h3
-                    class="text-xl font-bold text-slate-900 mb-2 group-hover:text-red-600 transition-colors"
-                  >
-                    Broadcasting in Laravel
-                  </h3>
-                  <p class="text-sm text-slate-600 leading-relaxed">
-                    Dive into real-time features with Laravel Broadcasting and
-                    WebSockets.
-                  </p>
-                </div>
-                <div class="mt-auto pt-4 flex items-center justify-end">
-                  <a
-                    href="https://github.com/MrPunyapal/broadcast-with-laravel"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-slate-400 hover:text-slate-900 transition-colors"
-                  >
-                    <i class="fab fa-github text-lg"></i>
-                  </a>
-                </div>
+          <!-- Project Card 5 -->
+          <div
+            class="group relative bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md dark:shadow-lg hover:shadow-lg dark:hover:shadow-xl transition-shadow border border-slate-200 dark:border-slate-700"
+          >
+            <div
+              class="w-full h-48 bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center text-white text-xl font-bold"
+            >
+              Laravel
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <i
+                  class="fas fa-laptop-code text-indigo-600 dark:text-indigo-400 text-lg"
+                ></i>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                  ecommerce-laravel
+                </h3>
               </div>
+              <span
+                class="inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-xs font-medium mb-3"
+                >PHP</span
+              >
+              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
+                Système e-commerce en Laravel 11 avec Filament 3
+              </p>
+              <p class="text-xs text-slate-500 dark:text-slate-500">
+                Mis à jour le 1er juillet 2024
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 6 -->
+          <div
+            class="group relative bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md dark:shadow-lg hover:shadow-lg dark:hover:shadow-xl transition-shadow border border-slate-200 dark:border-slate-700"
+          >
+            <div
+              class="w-full h-48 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center text-white text-xl font-bold"
+            >
+              ZapCare
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <i
+                  class="fas fa-heart text-red-600 dark:text-red-400 text-lg"
+                ></i>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                  zapcare
+                </h3>
+              </div>
+              <span
+                class="inline-block bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-3 py-1 rounded-full text-xs font-medium mb-3"
+                >Blade</span
+              >
+              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
+                Application de gestion de soins et suivi médical
+              </p>
+              <p class="text-xs text-slate-500 dark:text-slate-500">
+                Mis à jour la semaine dernière
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 7 -->
+          <div
+            class="group relative bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md dark:shadow-lg hover:shadow-lg dark:hover:shadow-xl transition-shadow border border-slate-200 dark:border-slate-700"
+          >
+            <div
+              class="w-full h-48 bg-gradient-to-br from-cyan-400 to-cyan-600 flex items-center justify-center text-white text-xl font-bold"
+            >
+              HRMS
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <i
+                  class="fas fa-users text-cyan-600 dark:text-cyan-400 text-lg"
+                ></i>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                  hrms
+                </h3>
+              </div>
+              <span
+                class="inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-xs font-medium mb-3"
+                >PHP</span
+              >
+              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
+                Système de gestion des ressources humaines
+              </p>
+              <p class="text-xs text-slate-500 dark:text-slate-500">
+                Mis à jour le 14 novembre
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 8 -->
+          <div
+            class="group relative bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md dark:shadow-lg hover:shadow-lg dark:hover:shadow-xl transition-shadow border border-slate-200 dark:border-slate-700"
+          >
+            <div
+              class="w-full h-48 bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center text-white text-xl font-bold"
+            >
+              Projects
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <i
+                  class="fas fa-tasks text-teal-600 dark:text-teal-400 text-lg"
+                ></i>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                  project_management_system
+                </h3>
+              </div>
+              <span
+                class="inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-xs font-medium mb-3"
+                >PHP</span
+              >
+              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
+                Plateforme complète de gestion de projets
+              </p>
+              <p class="text-xs text-slate-500 dark:text-slate-500">
+                Mis à jour le 25 août 2024
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 9 -->
+          <div
+            class="group relative bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md dark:shadow-lg hover:shadow-lg dark:hover:shadow-xl transition-shadow border border-slate-200 dark:border-slate-700"
+          >
+            <div
+              class="w-full h-48 bg-gradient-to-br from-pink-400 to-pink-600 flex items-center justify-center text-white text-xl font-bold"
+            >
+              École
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <i
+                  class="fas fa-graduation-cap text-pink-600 dark:text-pink-400 text-lg"
+                ></i>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                  SMS_INPHB
+                </h3>
+              </div>
+              <span
+                class="inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-xs font-medium mb-3"
+                >PHP</span
+              >
+              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
+                Système de gestion d'école pour INP-HB
+              </p>
+              <p class="text-xs text-slate-500 dark:text-slate-500">
+                Mis à jour le 3 juin 2024
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 10 -->
+          <div
+            class="group relative bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md dark:shadow-lg hover:shadow-lg dark:hover:shadow-xl transition-shadow border border-slate-200 dark:border-slate-700"
+          >
+            <div
+              class="w-full h-48 bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-white text-xl font-bold"
+            >
+              Filament
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <i
+                  class="fas fa-wrench text-amber-600 dark:text-amber-400 text-lg"
+                ></i>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                  filament-ecommerce-app
+                </h3>
+              </div>
+              <span
+                class="inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-xs font-medium mb-3"
+                >PHP</span
+              >
+              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
+                Application e-commerce avec admin Filament
+              </p>
+              <p class="text-xs text-slate-500 dark:text-slate-500">
+                Mis à jour le 16 mai 2024
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 11 -->
+          <div
+            class="group relative bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md dark:shadow-lg hover:shadow-lg dark:hover:shadow-xl transition-shadow border border-slate-200 dark:border-slate-700"
+          >
+            <div
+              class="w-full h-48 bg-gradient-to-br from-lime-400 to-lime-600 flex items-center justify-center text-white text-xl font-bold"
+            >
+              DevOps
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <i
+                  class="fas fa-rocket text-lime-600 dark:text-lime-400 text-lg"
+                ></i>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                  devops-exercises
+                </h3>
+              </div>
+              <span
+                class="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-xs font-medium mb-3"
+                >Python</span
+              >
+              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
+                Exercices et questions DevOps pour l'apprentissage continu
+              </p>
+              <p class="text-xs text-slate-500 dark:text-slate-500">
+                Mis à jour le 24 avril 2024
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 12 -->
+          <div
+            class="group relative bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md dark:shadow-lg hover:shadow-lg dark:hover:shadow-xl transition-shadow border border-slate-200 dark:border-slate-700"
+          >
+            <div
+              class="w-full h-48 bg-gradient-to-br from-fuchsia-400 to-fuchsia-600 flex items-center justify-center text-white text-xl font-bold"
+            >
+              Learning
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <i
+                  class="fas fa-book text-fuchsia-600 dark:text-fuchsia-400 text-lg"
+                ></i>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                  build-your-own-x
+                </h3>
+              </div>
+              <span
+                class="inline-block bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium mb-3"
+                >Markdown</span
+              >
+              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
+                Apprendre la programmation en recréant des technologies
+                populaires
+              </p>
+              <p class="text-xs text-slate-500 dark:text-slate-500">
+                Mis à jour le 29 août 2024
+              </p>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Footer -->
-      <div class="w-full max-w-5xl py-6 text-center mt-[-1px] z-10">
-        <p
-          class="text-xs text-slate-500 dark:text-slate-400 font-mono transition-colors duration-300"
-        >
-          // Interested in having me speak at your event?
-          <a
-            href="mailto:frederickoffisamuel@gmail.com"
-            class="text-slate-700 dark:text-slate-300 hover:text-red-600 dark:hover:text-red-500 transition-colors font-bold ml-1"
-          >
-            Initialize_Contact()
-          </a>
+      <footer
+        class="max-w-5xl mx-auto mt-12 mb-12 px-4 text-center border-t border-slate-200 dark:border-slate-700 pt-8"
+      >
+        <p class="text-sm text-slate-600 dark:text-slate-400">
+          Découvrez d'autres projets et contributions dans mon portfolio
+          professionnel
         </p>
-      </div>
+      </footer>
     </main>
 
     <!-- Enhanced JavaScript for better interactivity -->

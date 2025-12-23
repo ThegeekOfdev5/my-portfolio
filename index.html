@@ -1,787 +1,1409 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-x-hidden">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frédéric Samuel Koffi | Full-Stack Developer</title>
 
     <!-- Performance and Security -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#FF2D20">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#FF2D20" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Frédéric Samuel Koffi | Full-Stack Developer">
-    <meta name="description"
-        content="Full Stack Developer specializing in Laravel, PHP, JavaScript, and modern web development. Building robust, scalable, and user-friendly web solutions.">
-    <meta name="keywords" content="Laravel Developer, PHP Expert, Full-Stack Developer, Web Development, Open Source, Freelancer, Tailwind CSS, Livewire, Alpine.js, Filament, JavaScript, Ivory Coast">
-    <meta name="author" content="Frédéric Samuel Koffi">
-    <meta name="creator" content="Frédéric Samuel Koffi">
-    <meta name="publisher" content="Frédéric Samuel Koffi">
-    <meta name="subject" content="Laravel Development and Web Programming">
-    <meta name="category" content="Technology, Web Development, Programming">
-    <meta name="coverage" content="Worldwide">
-    <meta name="distribution" content="Global">
-    <meta name="rating" content="General">
-    <meta name="revisit-after" content="7 days">
+    <meta name="title" content="Frédéric Samuel Koffi | Full-Stack Developer" />
+    <meta
+      name="description"
+      content="Full Stack Developer specializing in Laravel, PHP, JavaScript, and modern web development. Building robust, scalable, and user-friendly web solutions."
+    />
+    <meta
+      name="keywords"
+      content="Laravel Developer, PHP Expert, Full-Stack Developer, Web Development, Open Source, Freelancer, Tailwind CSS, Livewire, Alpine.js, Filament, JavaScript, Ivory Coast"
+    />
+    <meta name="author" content="Frédéric Samuel Koffi" />
+    <meta name="creator" content="Frédéric Samuel Koffi" />
+    <meta name="publisher" content="Frédéric Samuel Koffi" />
+    <meta name="subject" content="Laravel Development and Web Programming" />
+    <meta name="category" content="Technology, Web Development, Programming" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+    <meta name="rating" content="General" />
+    <meta name="revisit-after" content="7 days" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://thegeekofdev.netlify.app/">
-    <meta property="og:title" content="Samuel Koffi | Full-Stack Developer">
-    <meta property="og:description" content="Expert in PHP, Laravel, Tailwind CSS, and modern web development.">
-    <meta property="og:image" content="https://thegeekofdev.netlify.app/og-image-mrpunyapal.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Samuel Koffi - Full-Stack Developer">
-    <meta property="og:site_name" content="Samuel Koffi">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thegeekofdev.netlify.app/" />
+    <meta property="og:title" content="Samuel Koffi | Full-Stack Developer" />
+    <meta
+      property="og:description"
+      content="Expert in PHP, Laravel, Tailwind CSS, and modern web development."
+    />
+    <meta
+      property="og:image"
+      content="https://thegeekofdev.netlify.app/og-image-mrpunyapal.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Samuel Koffi - Full-Stack Developer"
+    />
+    <meta property="og:site_name" content="Samuel Koffi" />
+    <meta property="og:locale" content="en_US" />
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@samuelKoffi86922">
-    <meta name="twitter:creator" content="@samuelKoffi86922">
-    <meta name="twitter:url" content="https://thegeekofdev.netlify.app/">
-    <meta name="twitter:title" content="Samuel Koffi | Software Engineer & Full-Stack Developer">
-    <meta name="twitter:image" content="https://thegeekofdev.netlify.app/og-image-mrpunyapal.jpg">
-    <meta name="twitter:image:alt" content="Samuel Koffi - Full-Stack Developer"> <!-- Structured Data for SEO -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@samuelKoffi86922" />
+    <meta name="twitter:creator" content="@samuelKoffi86922" />
+    <meta name="twitter:url" content="https://thegeekofdev.netlify.app/" />
+    <meta
+      name="twitter:title"
+      content="Samuel Koffi | Software Engineer & Full-Stack Developer"
+    />
+    <meta
+      name="twitter:image"
+      content="https://thegeekofdev.netlify.app/og-image-mrpunyapal.jpg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Samuel Koffi - Full-Stack Developer"
+    />
+    <!-- Structured Data for SEO -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Frédéric Samuel Koffi",
-        "jobTitle": "Full-Stack Developer",
-        "description": "Full Stack Developer passionate about building exceptional web experiences",
-        "url": "https://thegeekofdev.netlify.app/",
-        "image": "https://thegeekofdev.netlify.app/profile.jpg",
-        "alternateName": ["ThegeekOfdev5", "Full-Stack Developer"],
-        "hasOccupation": {
-            "@type": "Occupation",
-            "name": "Full-Stack Developer",
-            "occupationLocation": {
-                "@type": "Country",
-                "name": "Ivory Coast"
-            },
-            "skills": "Laravel, PHP, JavaScript, Tailwind CSS, Livewire, Alpine.js, Filament, PestPHP, NodeJS, Angular, React Native"
-        },
-        "sameAs": [
-            "https://github.com/ThegeekOfdev5",
-            "https://www.linkedin.com/in/frederic-samuel-koffi/",
-            "mailto:frederickoffisamuel@gmail.com"
-        ],
-        "knowsAbout": [
-            "Laravel Framework",
-            "PHP Programming",
-            "JavaScript Development",
-            "Web Development",
-            "Open Source Software",
-            "Tailwind CSS",
-            "Livewire",
-            "Alpine.js",
-            "Filament",
-            "PestPHP Testing",
-            "PHPStan",
-            "RectorPHP"
-        ],
-        "memberOf": {
-            <!-- "@type": "Organization",
-            "name": "Pinkary Project",
-            "url": "https://pinkary.com" -->
-        },
-        "founder": {
-            <!-- "@type": "Organization",
-            "name": "Software Engineers",
-            "url": "https://telegram.me/laravelartisans" -->
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "CI"
-        },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "email": "frederickoffisamuel@gmail.com",
-            "contactType": "professional"
-        }
-    }
-    </script> <!-- Favicon and Icons -->
-    <link rel="icon" href="/favicon.png" type="image/png">
-    <link rel="apple-touch-icon" href="/favicon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-    <meta name="msapplication-TileColor" content="#FF2D20">
+      {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Frédéric Samuel Koffi",
+          "jobTitle": "Full-Stack Developer",
+          "description": "Full Stack Developer passionate about building exceptional web experiences",
+          "url": "https://thegeekofdev.netlify.app/",
+          "image": "https://thegeekofdev.netlify.app/profile.jpg",
+          "alternateName": ["ThegeekOfdev5", "Full-Stack Developer"],
+          "hasOccupation": {
+              "@type": "Occupation",
+              "name": "Full-Stack Developer",
+              "occupationLocation": {
+                  "@type": "Country",
+                  "name": "Ivory Coast"
+              },
+              "skills": "Laravel, PHP, JavaScript, Tailwind CSS, Livewire, Alpine.js, Filament, PestPHP, NodeJS, Angular, React Native"
+          },
+          "sameAs": [
+              "https://github.com/ThegeekOfdev5",
+              "https://www.linkedin.com/in/frederic-samuel-koffi/",
+              "mailto:frederickoffisamuel@gmail.com"
+          ],
+          "knowsAbout": [
+              "Laravel Framework",
+              "PHP Programming",
+              "JavaScript Development",
+              "Web Development",
+              "Open Source Software",
+              "Tailwind CSS",
+              "Livewire",
+              "Alpine.js",
+              "Filament",
+              "PestPHP Testing",
+              "PHPStan",
+              "RectorPHP"
+          ],
+          "memberOf": {
+              <!-- "@type": "Organization",
+              "name": "Pinkary Project",
+              "url": "https://pinkary.com" -->
+          },
+          "founder": {
+              <!-- "@type": "Organization",
+              "name": "Software Engineers",
+              "url": "https://telegram.me/laravelartisans" -->
+          },
+          "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "CI"
+          },
+          "contactPoint": {
+              "@type": "ContactPoint",
+              "email": "frederickoffisamuel@gmail.com",
+              "contactType": "professional"
+          }
+      }
+    </script>
+    <!-- Favicon and Icons -->
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+    <meta name="msapplication-TileColor" content="#FF2D20" />
 
     <!-- Preload critical resources -->
-    <link rel="preload" href="/og-image-mrpunyapal.jpg" as="image" type="image/jpeg">
-    <link rel="preload" href="/profile-image.jpg" as="image" type="image/jpeg" fetchpriority="high">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link
+      rel="preload"
+      href="/og-image-mrpunyapal.jpg"
+      as="image"
+      type="image/jpeg"
+    />
+    <link
+      rel="preload"
+      href="/profile-image.jpg"
+      as="image"
+      type="image/jpeg"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      as="style"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
     <!-- Resource Hints for better performance -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
 
     <!-- Critical CSS for animations only -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-        /* Custom keyframes for enhanced animations */
-        @keyframes gradient-x {
-            0%, 100% { transform: translateX(-100%); }
-            50% { transform: translateX(100%); }
+      /* Custom keyframes for enhanced animations */
+      @keyframes gradient-x {
+        0%,
+        100% {
+          transform: translateX(-100%);
         }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(3deg); }
+        50% {
+          transform: translateX(100%);
         }
+      }
 
-        @keyframes glow {
-            0% { box-shadow: 0 0 20px rgba(255, 45, 32, 0.3); }
-            100% { box-shadow: 0 0 30px rgba(255, 45, 32, 0.6); }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px) rotate(0deg);
         }
-
-        @keyframes fade-up {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        50% {
+          transform: translateY(-20px) rotate(3deg);
         }
+      }
 
-        @keyframes scale-up {
-            from { transform: scale(0.95); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
+      @keyframes glow {
+        0% {
+          box-shadow: 0 0 20px rgba(255, 45, 32, 0.3);
         }
+        100% {
+          box-shadow: 0 0 30px rgba(255, 45, 32, 0.6);
+        }
+      }
 
-        /* Typing animation styles */
+      @keyframes fade-up {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes scale-up {
+        from {
+          transform: scale(0.95);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      /* Typing animation styles */
+      .typing-animation {
+        font-size: clamp(0.875rem, 2.5vw, 1.2rem);
+        color: rgba(100, 116, 139, 0.8);
+        font-weight: 500;
+        margin: 0;
+        min-height: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2px;
+      }
+
+      @media (max-width: 768px) {
         .typing-animation {
-            font-size: clamp(0.875rem, 2.5vw, 1.2rem);
-            color: rgba(100, 116, 139, 0.8);
-            font-weight: 500;
-            margin: 0;
-            min-height: 1.5em;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 2px;
+          justify-content: flex-start;
+          font-size: clamp(0.75rem, 3vw, 1rem);
         }
+      }
 
-        @media (max-width: 768px) {
-            .typing-animation {
-                justify-content: flex-start;
-                font-size: clamp(0.75rem, 3vw, 1rem);
-            }
-        }
+      .typing-text {
+        display: inline-block;
+        white-space: nowrap;
+      }
 
-        .typing-text {
-            display: inline-block;
-            white-space: nowrap;
-        }
+      .cursor {
+        font-weight: 300;
+        color: rgba(255, 45, 32, 0.8);
+        animation: blink 1s infinite;
+      }
 
-        .cursor {
-            font-weight: 300;
-            color: rgba(255, 45, 32, 0.8);
-            animation: blink 1s infinite;
+      @keyframes blink {
+        0%,
+        50% {
+          opacity: 1;
         }
+        51%,
+        100% {
+          opacity: 0;
+        }
+      }
 
-        @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
-        }
+      /* Ensure proper text colors */
+      body {
+        color: #1e293b;
+        overflow-x: hidden;
+      }
 
-        /* Ensure proper text colors */
-        body {
-            color: #1e293b;
-        }
+      /* Technical Grid Markers */
+      .tech-marker {
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        background-color: white;
+        border: 1px solid #cbd5e1;
+        border-radius: 50%;
+        z-index: 50;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+      }
 
-        /* Technical Grid Markers */
-        .tech-marker {
-            position: absolute;
-            width: 7px;
-            height: 7px;
-            background-color: white;
-            border: 1px solid #cbd5e1;
-            border-radius: 50%;
-            z-index: 50;
-            box-shadow: 0 0 0 2px rgba(255,255,255,0.5);
-        }
+      /* Infinite Grid Lines */
+      .tech-line-h {
+        position: absolute;
+        height: 1px;
+        background-color: #e2e8f0;
+        z-index: 0;
+        pointer-events: none;
+        width: 300vw;
+        left: 50%;
+        transform: translateX(-50%);
+      }
 
-        /* Infinite Grid Lines */
-        .tech-line-h {
-            position: absolute;
-            height: 1px;
-            background-color: #e2e8f0;
-            z-index: 0;
-            pointer-events: none;
-            width: 300vw;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+      .tech-line-v-top {
+        position: absolute;
+        width: 1px;
+        background-color: #e2e8f0;
+        z-index: 0;
+        pointer-events: none;
+        bottom: 100%;
+        height: 100vh;
+      }
 
-        .tech-line-v-top {
-            position: absolute;
-            width: 1px;
-            background-color: #e2e8f0;
-            z-index: 0;
-            pointer-events: none;
-            bottom: 100%;
-            height: 100vh;
-        }
+      .tech-line-v-bottom {
+        position: absolute;
+        width: 1px;
+        background: linear-gradient(to bottom, #e2e8f0, transparent);
+        z-index: 0;
+        pointer-events: none;
+        top: 100%;
+        height: 120px;
+      }
 
-        .tech-line-v-bottom {
-            position: absolute;
-            width: 1px;
-            background: linear-gradient(to bottom, #e2e8f0, transparent);
-            z-index: 0;
-            pointer-events: none;
-            top: 100%;
-            height: 120px;
-        }
+      /* Ant Circuit Lines Animation */
+      .ant-circuit-lines path {
+        stroke-dasharray: 10, 10;
+        animation: circuitDash 15s linear infinite;
+        vector-effect: non-scaling-stroke;
+      }
 
-        /* Ant Circuit Lines Animation */
-        .ant-circuit-lines path {
-            stroke-dasharray: 10, 10;
-            animation: circuitDash 15s linear infinite;
-            vector-effect: non-scaling-stroke;
+      @keyframes circuitDash {
+        to {
+          stroke-dashoffset: -200;
         }
-
-        @keyframes circuitDash {
-            to {
-                stroke-dashoffset: -200;
-            }
-        }
+      }
     </style>
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://thegeekofdev.netlify.app/">
+    <link rel="canonical" href="https://thegeekofdev.netlify.app/" />
 
     <!-- Enhanced meta tags for better SEO -->
-    <meta name="geo.region" content="IN">
-    <meta name="geo.placename" content="India">
-    <meta name="rating" content="general">
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="google-site-verification" content="">
-    <meta name="yandex-verification" content="">
-    <meta name="msvalidate.01" content="">
-    <meta name="alexaVerifyID" content="">
-    <meta name="p:domain_verify" content="">
-    <meta name="norton-safeweb-site-verification" content="">
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="India" />
+    <meta name="rating" content="general" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="google-site-verification" content="" />
+    <meta name="yandex-verification" content="" />
+    <meta name="msvalidate.01" content="" />
+    <meta name="alexaVerifyID" content="" />
+    <meta name="p:domain_verify" content="" />
+    <meta name="norton-safeweb-site-verification" content="" />
 
     <!-- Additional SEO Meta Tags -->
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="MrPunyapal">
-    <meta name="application-name" content="Samuel Koffi - Software Engineer">
-    <meta name="msapplication-tooltip" content="Software Engineer & Full-Stack Developer">
-    <meta name="msapplication-starturl" content="https://thegeekofdev.netlify.app/">
-    <meta name="msapplication-window" content="width=1024;height=768">
-    <meta name="msapplication-navbutton-color" content="#FF2D20">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="MrPunyapal" />
+    <meta name="application-name" content="Samuel Koffi - Software Engineer" />
+    <meta
+      name="msapplication-tooltip"
+      content="Software Engineer & Full-Stack Developer"
+    />
+    <meta
+      name="msapplication-starturl"
+      content="https://thegeekofdev.netlify.app/"
+    />
+    <meta name="msapplication-window" content="width=1024;height=768" />
+    <meta name="msapplication-navbutton-color" content="#FF2D20" />
 
     <!-- Language alternatives -->
-    <link rel="alternate" hreflang="en" href="https://thegeekofdev.netlify.app/">
-    <link rel="alternate" hreflang="x-default" href="https://thegeekofdev.netlify.app/">
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://thegeekofdev.netlify.app/"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://thegeekofdev.netlify.app/"
+    />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        'primary': {
-                            50: '#fff1f2',
-                            100: '#ffe4e6',
-                            500: '#FF2D20',
-                            600: '#e11d48',
-                            700: '#be123c',
-                            900: '#881337'
-                        },
-                        'accent': {
-                            50: '#fdf2f8',
-                            100: '#fce7f3',
-                            500: '#ec4899',
-                            600: '#db2777',
-                            700: '#be185d'
-                        }
-                    },
-                    fontFamily: {
-                        'sans': ['Inter', 'system-ui', 'sans-serif'],
-                        'display': ['Cal Sans', 'Inter', 'system-ui', 'sans-serif']
-                    },
-                    animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                        'glow': 'glow 2s ease-in-out infinite alternate',
-                        'fade-up': 'fade-up 0.6s ease-out',
-                        'scale-up': 'scale-up 0.3s ease-out'
-                    },
-                    backdropBlur: {
-                        'xs': '2px',
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: '#fff1f2',
+                100: '#ffe4e6',
+                500: '#FF2D20',
+                600: '#e11d48',
+                700: '#be123c',
+                900: '#881337',
+              },
+              accent: {
+                50: '#fdf2f8',
+                100: '#fce7f3',
+                500: '#ec4899',
+                600: '#db2777',
+                700: '#be185d',
+              },
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              display: ['Cal Sans', 'Inter', 'system-ui', 'sans-serif'],
+            },
+            animation: {
+              float: 'float 6s ease-in-out infinite',
+              glow: 'glow 2s ease-in-out infinite alternate',
+              'fade-up': 'fade-up 0.6s ease-out',
+              'scale-up': 'scale-up 0.3s ease-out',
+            },
+            backdropBlur: {
+              xs: '2px',
+            },
+          },
+        },
+      };
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="/app.css">
-    <link rel="stylesheet" href="/elephant.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/app.css" />
+    <link rel="stylesheet" href="/elephant.css" />
 
     <!-- Performance hints -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-</head>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+  </head>
 
-<body class="font-sans m-0 p-0 min-h-screen bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 leading-relaxed relative overflow-x-hidden antialiased transition-colors duration-300">
-
+  <body
+    class="font-sans m-0 p-0 min-h-screen bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 leading-relaxed relative overflow-x-hidden antialiased transition-colors duration-300"
+  >
     <!-- Background removed in favor of local grid animation -->
 
     <!-- Main Content - Technical Grid Layout -->
-    <main class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 gap-8">
-        <!-- Theme Toggle Button -->
-        <div class="fixed top-4 right-4 z-50">
-            <button id="themeToggle" class="w-12 h-12 rounded-full border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle dark mode">
-                <i class="fas fa-moon text-slate-600 dark:hidden"></i>
-                <i class="fas fa-sun text-yellow-500 hidden dark:inline-block"></i>
-            </button>
-        </div>
+    <main
+      class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 gap-8"
+    >
+      <!-- Theme Toggle Button -->
+      <div class="fixed top-4 right-4 z-50">
+        <button
+          id="themeToggle"
+          class="w-12 h-12 rounded-full border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors"
+          aria-label="Toggle dark mode"
+        >
+          <i class="fas fa-moon text-slate-600 dark:hidden"></i>
+          <i class="fas fa-sun text-yellow-500 hidden dark:inline-block"></i>
+        </button>
+      </div>
 
-        <div class="w-full max-w-6xl border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md relative z-10 transition-colors duration-300">
+      <div
+        class="w-full max-w-6xl border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md relative z-10 transition-colors duration-300"
+      >
+        <!-- Tech Markers: Corners -->
+        <div
+          class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -top-[4px] -left-[4px]"
+        ></div>
+        <div
+          class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -top-[4px] -right-[4px]"
+        ></div>
+        <div
+          class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -left-[4px]"
+        ></div>
+        <div
+          class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -right-[4px]"
+        ></div>
 
-            <!-- Tech Markers: Corners -->
-            <div class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -top-[4px] -left-[4px]"></div>
-            <div class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -top-[4px] -right-[4px]"></div>
-            <div class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -left-[4px]"></div>
-            <div class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -right-[4px]"></div>
+        <!-- Global Extensions -->
+        <div class="tech-line-h top-[-1px]"></div>
+        <div class="tech-line-h bottom-[-1px]"></div>
 
-            <!-- Global Extensions -->
-            <div class="tech-line-h top-[-1px]"></div>
-            <div class="tech-line-h bottom-[-1px]"></div>
+        <div class="tech-line-v-top left-[-1px]"></div>
+        <div class="tech-line-v-top right-[-1px]"></div>
 
-            <div class="tech-line-v-top left-[-1px]"></div>
-            <div class="tech-line-v-top right-[-1px]"></div>
+        <div class="tech-line-v-bottom left-[-1px]"></div>
+        <div class="tech-line-v-bottom right-[-1px]"></div>
 
-            <div class="tech-line-v-bottom left-[-1px]"></div>
-            <div class="tech-line-v-bottom right-[-1px]"></div>
+        <!-- Top Section: Profile & Header -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-12 border-b border-slate-200 dark:border-slate-700 relative transition-colors duration-300"
+        >
+          <!-- Horizontal Line Extension -->
+          <div
+            class="tech-line-h bg-slate-200 dark:bg-slate-700 bottom-[-1px]"
+          ></div>
 
-            <!-- Top Section: Profile & Header -->
-            <div class="grid grid-cols-1 md:grid-cols-12 border-b border-slate-200 dark:border-slate-700 relative transition-colors duration-300">
-                <!-- Horizontal Line Extension -->
-                <div class="tech-line-h bg-slate-200 dark:bg-slate-700 bottom-[-1px]"></div>
+          <!-- Intersections with outer border -->
+          <div
+            class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -left-[4px]"
+          ></div>
+          <div
+            class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -right-[4px]"
+          ></div>
 
-                <!-- Intersections with outer border -->
-                <div class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -left-[4px]"></div>
-                <div class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -right-[4px]"></div>
+          <!-- Navigation Links -->
+          <div
+            class="col-span-1 md:absolute md:top-0 md:right-0 md:z-20 p-4 flex justify-center md:justify-end gap-2 w-full md:w-auto border-b md:border-none border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none transition-colors duration-300"
+          >
+            <a
+              href="/resume.html"
+              class="px-4 py-2 text-xs font-medium uppercase tracking-wider border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors text-slate-600 dark:text-slate-400"
+            >
+              Resume
+            </a>
+            <a
+              href="/talks.html"
+              class="px-4 py-2 text-xs font-medium uppercase tracking-wider border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors text-slate-600 dark:text-slate-400"
+            >
+              Projets
+            </a>
+            <a
+              href="https://github.com/ThegeekOfdev5/my-portfolio"
+              target="_blank"
+              class="px-4 py-2 text-xs font-medium uppercase tracking-wider border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors text-slate-600 dark:text-slate-400"
+            >
+              Source
+            </a>
+          </div>
 
-                <!-- Navigation Links -->
-                <div class="col-span-1 md:absolute md:top-0 md:right-0 md:z-20 p-4 flex justify-center md:justify-end gap-2 w-full md:w-auto border-b md:border-none border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none transition-colors duration-300">
-                    <a href="/resume.html" class="px-4 py-2 text-xs font-medium uppercase tracking-wider border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors text-slate-600 dark:text-slate-400">
-                        Resume
-                    </a>
-                    <a href="/talks.html" class="px-4 py-2 text-xs font-medium uppercase tracking-wider border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors text-slate-600 dark:text-slate-400">
-                        Projets
-                    </a>
-                    <a href="https://github.com/ThegeekOfdev5/my-portfolio" target="_blank" class="px-4 py-2 text-xs font-medium uppercase tracking-wider border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors text-slate-600 dark:text-slate-400">
-                        Source
-                    </a>
-                </div>
+          <!-- Profile Photo (The Hub) -->
+          <div
+            class="md:col-span-4 lg:col-span-3 p-8 border-b md:border-b-0 md:border-r border-slate-200 dark:border-slate-700 flex items-center justify-center relative transition-colors duration-300"
+          >
+            <!-- Vertical Line Extensions (Up) -->
+            <div
+              class="tech-line-v-top -right-[1px] hidden md:block bg-slate-200 dark:bg-slate-700"
+            ></div>
 
-                <!-- Profile Photo (The Hub) -->
-                <div class="md:col-span-4 lg:col-span-3 p-8 border-b md:border-b-0 md:border-r border-slate-200 dark:border-slate-700 flex items-center justify-center relative transition-colors duration-300">
-                    <!-- Vertical Line Extensions (Up) -->
-                    <div class="tech-line-v-top -right-[1px] hidden md:block bg-slate-200 dark:bg-slate-700"></div>
+            <!-- Intersections -->
+            <div
+              class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -top-[4px] -right-[4px] hidden md:block"
+            ></div>
+            <div
+              class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -right-[4px] hidden md:block"
+            ></div>
+            <!-- Ant Lines Originating from Photo -->
+            <div
+              class="absolute inset-0 z-0 opacity-100 pointer-events-none overflow-hidden"
+            >
+              <svg
+                class="w-full h-full"
+                viewBox="0 0 400 400"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <pattern
+                    id="grid"
+                    width="20"
+                    height="20"
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <path
+                      d="M 20 0 L 0 0 0 20"
+                      fill="none"
+                      stroke="rgba(0,0,0,0.05)"
+                      stroke-width="1"
+                    />
+                  </pattern>
+                  <linearGradient
+                    id="ant-gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stop-color="#94a3b8" />
+                    <stop offset="100%" stop-color="#ef4444" />
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
 
-                    <!-- Intersections -->
-                    <div class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -top-[4px] -right-[4px] hidden md:block"></div>
-                    <div class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -right-[4px] hidden md:block"></div>
-                    <!-- Ant Lines Originating from Photo -->
-                    <div class="absolute inset-0 z-0 opacity-100 pointer-events-none overflow-hidden">
-                        <svg class="w-full h-full" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-                                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(0,0,0,0.05)" stroke-width="1"/>
-                                </pattern>
-                                <linearGradient id="ant-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#94a3b8" />
-                                    <stop offset="100%" stop-color="#ef4444" />
-                                </linearGradient>
-                            </defs>
-                            <rect width="100%" height="100%" fill="url(#grid)" />
+                <!-- Circuit lines radiating from image edge to box edges -->
+                <g
+                  class="ant-circuit-lines"
+                  stroke="url(#ant-gradient)"
+                  stroke-width="1.5"
+                  fill="none"
+                  stroke-linecap="round"
+                >
+                  <!-- Top Left -->
+                  <path d="M 170 110 L 110 80 L 80 60 L -500 60" />
 
-                            <!-- Circuit lines radiating from image edge to box edges -->
-                            <g class="ant-circuit-lines" stroke="url(#ant-gradient)" stroke-width="1.5" fill="none" stroke-linecap="round">
-                                <!-- Top Left -->
-                                <path d="M 170 110 L 110 80 L 80 60 L -500 60" />
+                  <!-- Top Center -->
+                  <path d="M 190 140 L 190 100 L 150 60 L 150 -20" />
+                  <path d="M 210 140 L 210 100 L 250 60 L 250 -20" />
 
-                                <!-- Top Center -->
-                                <path d="M 190 140 L 190 100 L 150 60 L 150 -20" />
-                                <path d="M 210 140 L 210 100 L 250 60 L 250 -20" />
+                  <!-- Top Right -->
+                  <path d="M 230 110 L 290 80 L 320 60 L 1000 60" />
 
-                                <!-- Top Right -->
-                                <path d="M 230 110 L 290 80 L 320 60 L 1000 60" />
+                  <!-- Right -->
+                  <path d="M 260 180 L 320 180 L 360 140 L 1000 140" />
+                  <path d="M 260 220 L 320 220 L 360 260 L 1000 260" />
 
-                                <!-- Right -->
-                                <path d="M 260 180 L 320 180 L 360 140 L 1000 140" />
-                                <path d="M 260 220 L 320 220 L 360 260 L 1000 260" />
+                  <!-- Bottom Right -->
+                  <path d="M 230 290 L 290 320 L 320 340 L 1000 340" />
 
-                                <!-- Bottom Right -->
-                                <path d="M 230 290 L 290 320 L 320 340 L 1000 340" />
+                  <!-- Bottom Center -->
+                  <path d="M 190 260 L 190 300 L 150 340 L 150 420" />
+                  <path d="M 210 260 L 210 300 L 250 340 L 250 420" />
 
-                                <!-- Bottom Center -->
-                                <path d="M 190 260 L 190 300 L 150 340 L 150 420" />
-                                <path d="M 210 260 L 210 300 L 250 340 L 250 420" />
+                  <!-- Bottom Left -->
+                  <path d="M 170 290 L 110 320 L 80 340 L -500 340" />
 
-                                <!-- Bottom Left -->
-                                <path d="M 170 290 L 110 320 L 80 340 L -500 340" />
-
-                                <!-- Left -->
-                                <path d="M 140 180 L 80 180 L 40 140 L -500 140" />
-                                <path d="M 140 220 L 80 220 L 40 260 L -500 260" />
-                            </g>
-                        </svg>
-                    </div>
-
-                    <div class="relative z-10 group">
-                        <img src="https://avatars.githubusercontent.com/u/122167748?s=400&v=4"
-                             alt="Frédéric Samuel Koffi"
-                             class="relative w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover border-4 border-white dark:border-slate-700 shadow-sm z-10"
-                             loading="eager">
-                    </div>
-                </div>
-
-                <!-- Header Info & Nav -->
-                <div class="md:col-span-8 lg:col-span-9 p-6 sm:p-8 flex flex-col justify-center relative">
-                    <div class="md:mt-0">
-                        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-2 tracking-tight">
-                            Frédéric Samuel Koffi
-                        </h1>
-                        <div class="typing-animation mt-2 sm:mt-3">
-                            <span class="typing-text text-lg sm:text-xl text-red-600 dark:text-orange-400 font-medium" id="typingText">Full Stack Developer</span>
-                            <span class="cursor text-red-600 dark:text-orange-400">|</span>
-                        </div>
-                    </div>
-                </div>
+                  <!-- Left -->
+                  <path d="M 140 180 L 80 180 L 40 140 L -500 140" />
+                  <path d="M 140 220 L 80 220 L 40 260 L -500 260" />
+                </g>
+              </svg>
             </div>
 
-            <!-- Middle Section: About -->
-            <div class="p-6 sm:p-8 border-b border-slate-200 dark:border-slate-700 relative transition-colors duration-300">
-                <!-- Horizontal Line Extension -->
-                <div class="tech-line-h bg-slate-200 dark:bg-slate-700 bottom-[-1px]"></div>
-
-                <!-- Intersections -->
-                <div class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -left-[4px]"></div>
-                <div class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -right-[4px]"></div>
-
-                <div class="flex flex-col md:flex-row gap-8 items-center">
-                    <div class="flex-1">
-                        <h2 class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-4">À Propos</h2>
-                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed max-w-4xl text-sm sm:text-base">
-                            Je suis un <strong class="text-slate-900 dark:text-white">développeur full stack</strong>
-                            passionné par la création de solutions web robustes et scalables.
-                            Spécialisé dans Laravel, PHP, JavaScript et les technologies modernes, je construis des applications
-                            testables, maintenables et orientées produit. J'aime contribuer à l'open source et partager mes connaissances avec la communauté.
-                        </p>
-                    </div>
-
-                    <!-- Door Container -->
-                    <div id="desktop-door-placeholder" class="relative shrink-0">
-                        <div id="door-container" class="door-container">
-                            <div class="door-frame-outer">
-                                <div class="door-lintel"></div>
-                                <div class="door-panel left-panel">
-                                    <div class="panel-inner">
-                                        <svg class="door-carving" viewBox="0 0 50 100" preserveAspectRatio="none">
-                                            <!-- Left half of elephant face -->
-                                            <path d="M50,15 C30,10 2,20 2,45 C2,70 25,70 35,60 Q35,80 30,95 L42,100 L50,100 L50,15 Z" class="carving-shape" />
-                                            <circle cx="32" cy="40" r="3" class="carving-eye" />
-                                            <path d="M38,65 Q25,80 35,90" class="carving-tusk" />
-                                        </svg>
-                                    </div>
-                                    <div class="door-handle"></div>
-                                </div>
-                                <div class="door-panel right-panel">
-                                    <div class="panel-inner">
-                                        <svg class="door-carving" viewBox="0 0 50 100" preserveAspectRatio="none">
-                                            <!-- Right half of elephant face -->
-                                            <path d="M0,15 C20,10 48,20 48,45 C48,70 25,70 15,60 Q15,80 20,95 L8,100 L0,100 L0,15 Z" class="carving-shape" />
-                                            <circle cx="18" cy="40" r="3" class="carving-eye" />
-                                            <path d="M12,65 Q25,80 15,90" class="carving-tusk" />
-                                        </svg>
-                                    </div>
-                                    <div class="door-handle"></div>
-                                </div>
-                                <div class="door-message" id="doorMessage">Knock to see me</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="relative z-10 group">
+              <img
+                src="https://avatars.githubusercontent.com/u/122167748?s=400&v=4"
+                alt="Frédéric Samuel Koffi"
+                class="relative w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover border-4 border-white dark:border-slate-700 shadow-sm z-10"
+                loading="eager"
+              />
             </div>
+          </div>
 
-            <!-- Bottom Section: Grid for Skills & Social -->
-            <div class="grid grid-cols-1 lg:grid-cols-2">
-
-                <!-- Skills -->
-                <div class="p-6 sm:p-8 border-b lg:border-b-0 lg:border-r border-slate-200 dark:border-slate-700 relative transition-colors duration-300">
-                    <!-- Vertical Line Extensions (Down) -->
-                    <div class="tech-line-v-bottom bg-slate-200 dark:bg-slate-700 -right-[1px] hidden lg:block"></div>
-
-                    <!-- Intersections -->
-                    <div class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -top-[4px] -right-[4px] hidden lg:block"></div>
-                    <div class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -right-[4px] hidden lg:block"></div>
-
-                    <!-- Intersections for small screen border-b -->
-                    <div class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -left-[4px] lg:hidden"></div>
-                    <div class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -right-[4px] lg:hidden"></div>
-                    <h2 class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-6">Compétences Techniques</h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
-                        <div class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#777BB4] dark:hover:bg-slate-600">
-                            <span class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#777BB4] transition-colors">PHP</span>
-                        </div>
-                        <div class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#FF2D20] dark:hover:bg-slate-600">
-                            <span class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#FF2D20] transition-colors">Laravel</span>
-                        </div>
-                        <div class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#FB70A9] dark:hover:bg-slate-600">
-                            <span class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#FB70A9] transition-colors">Livewire</span>
-                        </div>
-                        <div class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#8BC0D0] dark:hover:bg-slate-600">
-                            <span class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#8BC0D0] transition-colors">Alpine.js</span>
-                        </div>
-                        <div class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#F2C14E] dark:hover:bg-slate-600">
-                            <span class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#F2C14E] transition-colors">Filament</span>
-                        </div>
-                        <div class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#D8B3FF] dark:hover:bg-slate-600">
-                            <span class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#D8B3FF] transition-colors">Pest</span>
-                        </div>
-                        <div class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#777BB4] dark:hover:bg-slate-600">
-                            <span class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#777BB4] transition-colors">Flutter</span>
-                        </div>
-                        <div class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#10B981] dark:hover:bg-slate-600">
-                            <span class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#10B981] transition-colors">React Native</span>
-                        </div>
-                        <div class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#06B6D4] dark:hover:bg-slate-600">
-                            <span class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#06B6D4] transition-colors">Tailwind</span>
-                        </div>
-                        <div class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#F7DF1E] dark:hover:bg-slate-600">
-                            <span class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#F7DF1E] transition-colors">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Social -->
-                <div class="grid grid-cols-1 md:grid-cols-2">
-                    <!-- Connect Nodes -->
-                    <div class="p-6 sm:p-8 border-b md:border-b-0 md:border-r border-slate-200 dark:border-slate-700 relative transition-colors duration-300">
-                        <!-- Vertical Line Extensions (Down) -->
-                        <div class="tech-line-v-bottom bg-slate-200 dark:bg-slate-700 -right-[1px] hidden md:block"></div>
-
-                        <!-- Intersections -->
-                        <div class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -top-[4px] -right-[4px] hidden md:block"></div>
-                        <div class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -right-[4px] hidden md:block"></div>
-
-                        <h2 class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-6">Connexions</h2>
-                        <div class="flex flex-wrap gap-4">
-                            <a href="https://github.com/ThegeekOfdev5" target="_blank" class="w-10 h-10 flex items-center justify-center border border-slate-200 dark:border-slate-600 rounded hover:bg-slate-800 dark:hover:bg-slate-200 hover:text-white dark:hover:text-slate-800 hover:border-slate-800 dark:hover:border-slate-200 transition-all" aria-label="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://linkedin.com/in/frederic-samuel-koffi" target="_blank" class="w-10 h-10 flex items-center justify-center border border-slate-200 dark:border-slate-600 rounded hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white hover:border-blue-600 dark:hover:border-blue-500 transition-all" aria-label="LinkedIn">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="mailto:frederickoffisamuel@gmail.com" class="w-10 h-10 flex items-center justify-center border border-slate-200 dark:border-slate-600 rounded hover:bg-red-500 dark:hover:bg-red-600 hover:text-white hover:border-red-500 dark:hover:border-red-600 transition-all" aria-label="Email">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Contact Info -->
-                    <div class="p-6 sm:p-8 relative">
-                        <h2 class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-6">Contact</h2>
-                        <div class="space-y-3 text-sm">
-                            <p class="text-slate-600 dark:text-slate-400">
-                                <span class="font-semibold text-slate-900 dark:text-white">Email: </span>
-                                <a href="mailto:frederickoffisamuel@gmail.com" class="hover:text-red-600 dark:hover:text-red-400 transition-colors">frederickoffisamuel@gmail.com</a>
-                            </p>
-                            <p class="text-slate-600 dark:text-slate-400">
-                                <span class="font-semibold text-slate-900 dark:text-white">Location: </span>
-                                Ivory Coast
-                            </p>
-                            <p class="text-slate-600 dark:text-slate-400">
-                                <span class="font-semibold text-slate-900 dark:text-white">Disponibilité: </span>
-                                Ouvert aux collaborations et projets
-                            </p>
-                        </div>
-                    </div>
-                </div>
+          <!-- Header Info & Nav -->
+          <div
+            class="md:col-span-8 lg:col-span-9 p-6 sm:p-8 flex flex-col justify-center relative"
+          >
+            <div class="md:mt-0">
+              <h1
+                class="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-2 tracking-tight"
+              >
+                Frédéric Samuel Koffi
+              </h1>
+              <div class="typing-animation mt-2 sm:mt-3">
+                <span
+                  class="typing-text text-lg sm:text-xl text-red-600 dark:text-orange-400 font-medium"
+                  id="typingText"
+                  >Full Stack Developer</span
+                >
+                <span class="cursor text-red-600 dark:text-orange-400">|</span>
+              </div>
             </div>
+          </div>
         </div>
 
-        <!-- Mobile Door Placeholder -->
-        <div id="mobile-door-placeholder" class="md:hidden w-full flex justify-center min-h-[150px]">
-            <!-- Door will be moved here on mobile -->
+        <!-- Middle Section: About -->
+        <div
+          class="p-6 sm:p-8 border-b border-slate-200 dark:border-slate-700 relative transition-colors duration-300"
+        >
+          <!-- Horizontal Line Extension -->
+          <div
+            class="tech-line-h bg-slate-200 dark:bg-slate-700 bottom-[-1px]"
+          ></div>
+
+          <!-- Intersections -->
+          <div
+            class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -left-[4px]"
+          ></div>
+          <div
+            class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -right-[4px]"
+          ></div>
+
+          <div class="flex flex-col md:flex-row gap-8 items-center">
+            <div class="flex-1">
+              <h2
+                class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-4"
+              >
+                À Propos
+              </h2>
+              <p
+                class="text-slate-600 dark:text-slate-300 leading-relaxed max-w-4xl text-sm sm:text-base"
+              >
+                Je suis un
+                <strong class="text-slate-900 dark:text-white"
+                  >développeur full stack</strong
+                >
+                passionné par la création de solutions web robustes et
+                scalables. Spécialisé dans Laravel, PHP, JavaScript et les
+                technologies modernes, je construis des applications testables,
+                maintenables et orientées produit. J'aime contribuer à l'open
+                source et partager mes connaissances avec la communauté.
+              </p>
+            </div>
+
+            <!-- Door Container -->
+            <div id="desktop-door-placeholder" class="relative shrink-0">
+              <div id="door-container" class="door-container">
+                <div class="door-frame-outer">
+                  <div class="door-lintel"></div>
+                  <div class="door-panel left-panel">
+                    <div class="panel-inner">
+                      <svg
+                        class="door-carving"
+                        viewBox="0 0 50 100"
+                        preserveAspectRatio="none"
+                      >
+                        <!-- Left half of elephant face -->
+                        <path
+                          d="M50,15 C30,10 2,20 2,45 C2,70 25,70 35,60 Q35,80 30,95 L42,100 L50,100 L50,15 Z"
+                          class="carving-shape"
+                        />
+                        <circle cx="32" cy="40" r="3" class="carving-eye" />
+                        <path d="M38,65 Q25,80 35,90" class="carving-tusk" />
+                      </svg>
+                    </div>
+                    <div class="door-handle"></div>
+                  </div>
+                  <div class="door-panel right-panel">
+                    <div class="panel-inner">
+                      <svg
+                        class="door-carving"
+                        viewBox="0 0 50 100"
+                        preserveAspectRatio="none"
+                      >
+                        <!-- Right half of elephant face -->
+                        <path
+                          d="M0,15 C20,10 48,20 48,45 C48,70 25,70 15,60 Q15,80 20,95 L8,100 L0,100 L0,15 Z"
+                          class="carving-shape"
+                        />
+                        <circle cx="18" cy="40" r="3" class="carving-eye" />
+                        <path d="M12,65 Q25,80 15,90" class="carving-tusk" />
+                      </svg>
+                    </div>
+                    <div class="door-handle"></div>
+                  </div>
+                  <div class="door-message" id="doorMessage">
+                    Knock to see me
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Bottom Section: Grid for Skills & Social -->
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <!-- Skills -->
+          <div
+            class="p-6 sm:p-8 border-b lg:border-b-0 lg:border-r border-slate-200 dark:border-slate-700 relative transition-colors duration-300"
+          >
+            <!-- Vertical Line Extensions (Down) -->
+            <div
+              class="tech-line-v-bottom bg-slate-200 dark:bg-slate-700 -right-[1px] hidden lg:block"
+            ></div>
+
+            <!-- Intersections -->
+            <div
+              class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -top-[4px] -right-[4px] hidden lg:block"
+            ></div>
+            <div
+              class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -right-[4px] hidden lg:block"
+            ></div>
+
+            <!-- Intersections for small screen border-b -->
+            <div
+              class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -left-[4px] lg:hidden"
+            ></div>
+            <div
+              class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -right-[4px] lg:hidden"
+            ></div>
+            <h2
+              class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-6"
+            >
+              Compétences Techniques
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+              <div
+                class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#777BB4] dark:hover:bg-slate-600"
+              >
+                <span
+                  class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#777BB4] transition-colors"
+                  >PHP</span
+                >
+              </div>
+              <div
+                class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#FF2D20] dark:hover:bg-slate-600"
+              >
+                <span
+                  class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#FF2D20] transition-colors"
+                  >Laravel</span
+                >
+              </div>
+              <div
+                class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#FB70A9] dark:hover:bg-slate-600"
+              >
+                <span
+                  class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#FB70A9] transition-colors"
+                  >Livewire</span
+                >
+              </div>
+              <div
+                class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#8BC0D0] dark:hover:bg-slate-600"
+              >
+                <span
+                  class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#8BC0D0] transition-colors"
+                  >Alpine.js</span
+                >
+              </div>
+              <div
+                class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#F2C14E] dark:hover:bg-slate-600"
+              >
+                <span
+                  class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#F2C14E] transition-colors"
+                  >Filament</span
+                >
+              </div>
+              <div
+                class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#D8B3FF] dark:hover:bg-slate-600"
+              >
+                <span
+                  class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#D8B3FF] transition-colors"
+                  >Pest</span
+                >
+              </div>
+              <div
+                class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#777BB4] dark:hover:bg-slate-600"
+              >
+                <span
+                  class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#777BB4] transition-colors"
+                  >Flutter</span
+                >
+              </div>
+              <div
+                class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#10B981] dark:hover:bg-slate-600"
+              >
+                <span
+                  class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#10B981] transition-colors"
+                  >React Native</span
+                >
+              </div>
+              <div
+                class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#06B6D4] dark:hover:bg-slate-600"
+              >
+                <span
+                  class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#06B6D4] transition-colors"
+                  >Tailwind</span
+                >
+              </div>
+              <div
+                class="p-3 border border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-700/50 text-center group transition-colors hover:border-[#F7DF1E] dark:hover:bg-slate-600"
+              >
+                <span
+                  class="text-xs font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#F7DF1E] transition-colors"
+                  >JavaScript</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Social -->
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <!-- Connect Nodes -->
+            <div
+              class="p-6 sm:p-8 border-b md:border-b-0 md:border-r border-slate-200 dark:border-slate-700 relative transition-colors duration-300"
+            >
+              <!-- Vertical Line Extensions (Down) -->
+              <div
+                class="tech-line-v-bottom bg-slate-200 dark:bg-slate-700 -right-[1px] hidden md:block"
+              ></div>
+
+              <!-- Intersections -->
+              <div
+                class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -top-[4px] -right-[4px] hidden md:block"
+              ></div>
+              <div
+                class="tech-marker bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 -bottom-[4px] -right-[4px] hidden md:block"
+              ></div>
+
+              <h2
+                class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-6"
+              >
+                Connexions
+              </h2>
+              <div class="flex flex-wrap gap-4">
+                <a
+                  href="https://github.com/ThegeekOfdev5"
+                  target="_blank"
+                  class="w-10 h-10 flex items-center justify-center border border-slate-200 dark:border-slate-600 rounded hover:bg-slate-800 dark:hover:bg-slate-200 hover:text-white dark:hover:text-slate-800 hover:border-slate-800 dark:hover:border-slate-200 transition-all"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://linkedin.com/in/frederic-samuel-koffi"
+                  target="_blank"
+                  class="w-10 h-10 flex items-center justify-center border border-slate-200 dark:border-slate-600 rounded hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white hover:border-blue-600 dark:hover:border-blue-500 transition-all"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="mailto:frederickoffisamuel@gmail.com"
+                  class="w-10 h-10 flex items-center justify-center border border-slate-200 dark:border-slate-600 rounded hover:bg-red-500 dark:hover:bg-red-600 hover:text-white hover:border-red-500 dark:hover:border-red-600 transition-all"
+                  aria-label="Email"
+                >
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="p-6 sm:p-8 relative">
+              <h2
+                class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-6"
+              >
+                Contact
+              </h2>
+              <div class="space-y-3 text-sm">
+                <p class="text-slate-600 dark:text-slate-400">
+                  <span class="font-semibold text-slate-900 dark:text-white"
+                    >Email:
+                  </span>
+                  <a
+                    href="mailto:frederickoffisamuel@gmail.com"
+                    class="hover:text-red-600 dark:hover:text-red-400 transition-colors"
+                    >frederickoffisamuel@gmail.com</a
+                  >
+                </p>
+                <p class="text-slate-600 dark:text-slate-400">
+                  <span class="font-semibold text-slate-900 dark:text-white"
+                    >Location:
+                  </span>
+                  Ivory Coast
+                </p>
+                <p class="text-slate-600 dark:text-slate-400">
+                  <span class="font-semibold text-slate-900 dark:text-white"
+                    >Disponibilité:
+                  </span>
+                  Ouvert aux collaborations et projets
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Door Placeholder -->
+      <div
+        id="mobile-door-placeholder"
+        class="md:hidden w-full flex justify-center min-h-[150px]"
+      >
+        <!-- Door will be moved here on mobile -->
+      </div>
     </main>
 
     <div class="elephant-container" id="runningElephant">
-        <svg class="elephant" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-            <!-- Enhanced gradients and filters for more depth -->
-            <defs>
-                <radialGradient id="elephantGradient" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
-                    <stop offset="0%" style="stop-color:#b8b5cc" />
-                    <stop offset="60%" style="stop-color:#9691bb" />
-                    <stop offset="90%" style="stop-color:#777bb4" />
-                    <stop offset="100%" style="stop-color:#6c70a3" />
-                </radialGradient>
-                <linearGradient id="trunkGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" style="stop-color:#9691bb" />
-                    <stop offset="50%" style="stop-color:#8186b8" />
-                    <stop offset="100%" style="stop-color:#777bb4" />
-                </linearGradient>
-                <radialGradient id="earGradient" cx="30%" cy="30%" r="80%">
-                    <stop offset="0%" style="stop-color:#d3d1e3" />
-                    <stop offset="70%" style="stop-color:#a8a4c9" />
-                    <stop offset="100%" style="stop-color:#8e89b9" />
-                </radialGradient>
-                <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
-                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
-                    <feOffset dx="0" dy="4" result="offsetblur" />
-                    <feComponentTransfer>
-                        <feFuncA type="linear" slope="0.3" />
-                    </feComponentTransfer>
-                    <feMerge>
-                        <feMergeNode />
-                        <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                </filter>
-                <filter id="innerShadow" x="-50%" y="-50%" width="200%" height="200%">
-                    <feOffset dx="0" dy="2" />
-                    <feGaussianBlur stdDeviation="2" result="offset-blur" />
-                    <feFlood flood-color="#6c70a3" flood-opacity="0.3" />
-                    <feComposite in2="offset-blur" operator="in" />
-                </filter>
-            </defs>
+      <svg
+        class="elephant"
+        viewBox="0 0 400 300"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <!-- Enhanced gradients and filters for more depth -->
+        <defs>
+          <radialGradient
+            id="elephantGradient"
+            cx="50%"
+            cy="50%"
+            r="70%"
+            fx="50%"
+            fy="50%"
+          >
+            <stop offset="0%" style="stop-color: #b8b5cc" />
+            <stop offset="60%" style="stop-color: #9691bb" />
+            <stop offset="90%" style="stop-color: #777bb4" />
+            <stop offset="100%" style="stop-color: #6c70a3" />
+          </radialGradient>
+          <linearGradient id="trunkGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color: #9691bb" />
+            <stop offset="50%" style="stop-color: #8186b8" />
+            <stop offset="100%" style="stop-color: #777bb4" />
+          </linearGradient>
+          <radialGradient id="earGradient" cx="30%" cy="30%" r="80%">
+            <stop offset="0%" style="stop-color: #d3d1e3" />
+            <stop offset="70%" style="stop-color: #a8a4c9" />
+            <stop offset="100%" style="stop-color: #8e89b9" />
+          </radialGradient>
+          <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+            <feOffset dx="0" dy="4" result="offsetblur" />
+            <feComponentTransfer>
+              <feFuncA type="linear" slope="0.3" />
+            </feComponentTransfer>
+            <feMerge>
+              <feMergeNode />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+          <filter id="innerShadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset dx="0" dy="2" />
+            <feGaussianBlur stdDeviation="2" result="offset-blur" />
+            <feFlood flood-color="#6c70a3" flood-opacity="0.3" />
+            <feComposite in2="offset-blur" operator="in" />
+          </filter>
+        </defs>
 
-            <!-- Enhanced body with more realistic shape and texture -->
-            <path class="elephant-body" d="M120,180 Q130,140 200,140 Q270,140 290,170 Q310,185 310,200 Q310,235 260,250 Q200,265 140,250 Q115,245 115,210 Q115,190 120,180" fill="url(#elephantGradient)" filter="url(#softShadow)" />
+        <!-- Enhanced body with more realistic shape and texture -->
+        <path
+          class="elephant-body"
+          d="M120,180 Q130,140 200,140 Q270,140 290,170 Q310,185 310,200 Q310,235 260,250 Q200,265 140,250 Q115,245 115,210 Q115,190 120,180"
+          fill="url(#elephantGradient)"
+          filter="url(#softShadow)"
+        />
 
-            <!-- Body texture and wrinkles for realism -->
-            <path class="body-detail" d="M140,170 Q190,150 240,170" stroke="#8e89b9" stroke-width="1.5" fill="none"
-                opacity="0.6" />
-            <path class="body-detail" d="M150,200 Q190,190 230,200" stroke="#8e89b9" stroke-width="1.5" fill="none"
-                opacity="0.6" />
-            <path class="body-detail" d="M160,230 Q190,220 220,230" stroke="#8e89b9" stroke-width="1.5" fill="none"
-                opacity="0.6" />
-            <path class="body-wrinkle" d="M130,185 Q160,183 190,185" stroke="#777bb4" stroke-width="0.8" fill="none"
-                opacity="0.4" />
-            <path class="body-wrinkle" d="M135,215 Q165,213 195,215" stroke="#777bb4" stroke-width="0.8" fill="none"
-                opacity="0.4" />
+        <!-- Body texture and wrinkles for realism -->
+        <path
+          class="body-detail"
+          d="M140,170 Q190,150 240,170"
+          stroke="#8e89b9"
+          stroke-width="1.5"
+          fill="none"
+          opacity="0.6"
+        />
+        <path
+          class="body-detail"
+          d="M150,200 Q190,190 230,200"
+          stroke="#8e89b9"
+          stroke-width="1.5"
+          fill="none"
+          opacity="0.6"
+        />
+        <path
+          class="body-detail"
+          d="M160,230 Q190,220 220,230"
+          stroke="#8e89b9"
+          stroke-width="1.5"
+          fill="none"
+          opacity="0.6"
+        />
+        <path
+          class="body-wrinkle"
+          d="M130,185 Q160,183 190,185"
+          stroke="#777bb4"
+          stroke-width="0.8"
+          fill="none"
+          opacity="0.4"
+        />
+        <path
+          class="body-wrinkle"
+          d="M135,215 Q165,213 195,215"
+          stroke="#777bb4"
+          stroke-width="0.8"
+          fill="none"
+          opacity="0.4"
+        />
 
-            <!-- Head with better shape and more details -->
-            <ellipse class="elephant-head" cx="120" cy="140" rx="55" ry="50" fill="url(#elephantGradient)" />
+        <!-- Head with better shape and more details -->
+        <ellipse
+          class="elephant-head"
+          cx="120"
+          cy="140"
+          rx="55"
+          ry="50"
+          fill="url(#elephantGradient)"
+        />
 
-            <!-- Forehead wrinkles for character -->
-            <path class="head-wrinkle" d="M85,115 Q120,113 155,115" stroke="#8e89b9" stroke-width="1" fill="none"
-                opacity="0.5" />
-            <path class="head-wrinkle" d="M90,125 Q120,123 150,125" stroke="#8e89b9" stroke-width="1" fill="none"
-                opacity="0.5" />
+        <!-- Forehead wrinkles for character -->
+        <path
+          class="head-wrinkle"
+          d="M85,115 Q120,113 155,115"
+          stroke="#8e89b9"
+          stroke-width="1"
+          fill="none"
+          opacity="0.5"
+        />
+        <path
+          class="head-wrinkle"
+          d="M90,125 Q120,123 150,125"
+          stroke="#8e89b9"
+          stroke-width="1"
+          fill="none"
+          opacity="0.5"
+        />
 
-            <!-- Enhanced ears with more detail and animation -->
-            <ellipse class="elephant-ear left-ear" cx="80" cy="120" rx="40" ry="50" fill="url(#earGradient)" />
-            <path class="ear-detail" d="M60,100 Q90,95 100,110" stroke="#8e89b9" stroke-width="2" fill="none" />
-            <path class="ear-detail" d="M55,115 Q85,110 95,125" stroke="#8e89b9" stroke-width="2" fill="none" />
-            <path class="ear-detail" d="M50,130 Q75,125 90,140" stroke="#8e89b9" stroke-width="1.5" fill="none" />
-            <path class="ear-inner" d="M65,110 Q85,108 95,115" stroke="#a8a4c9" stroke-width="3" fill="none" opacity="0.7" />
+        <!-- Enhanced ears with more detail and animation -->
+        <ellipse
+          class="elephant-ear left-ear"
+          cx="80"
+          cy="120"
+          rx="40"
+          ry="50"
+          fill="url(#earGradient)"
+        />
+        <path
+          class="ear-detail"
+          d="M60,100 Q90,95 100,110"
+          stroke="#8e89b9"
+          stroke-width="2"
+          fill="none"
+        />
+        <path
+          class="ear-detail"
+          d="M55,115 Q85,110 95,125"
+          stroke="#8e89b9"
+          stroke-width="2"
+          fill="none"
+        />
+        <path
+          class="ear-detail"
+          d="M50,130 Q75,125 90,140"
+          stroke="#8e89b9"
+          stroke-width="1.5"
+          fill="none"
+        />
+        <path
+          class="ear-inner"
+          d="M65,110 Q85,108 95,115"
+          stroke="#a8a4c9"
+          stroke-width="3"
+          fill="none"
+          opacity="0.7"
+        />
 
-            <ellipse class="elephant-ear right-ear" cx="160" cy="120" rx="40" ry="50" fill="url(#earGradient)" />
-            <path class="ear-detail" d="M140,100 Q170,95 180,110" stroke="#8e89b9" stroke-width="2" fill="none" />
-            <path class="ear-detail" d="M135,115 Q165,110 175,125" stroke="#8e89b9" stroke-width="2" fill="none" />
-            <path class="ear-detail" d="M130,130 Q155,125 170,140" stroke="#8e89b9" stroke-width="1.5" fill="none" />
-            <path class="ear-inner" d="M145,110 Q165,108 175,115" stroke="#a8a4c9" stroke-width="3" fill="none" opacity="0.7" />
+        <ellipse
+          class="elephant-ear right-ear"
+          cx="160"
+          cy="120"
+          rx="40"
+          ry="50"
+          fill="url(#earGradient)"
+        />
+        <path
+          class="ear-detail"
+          d="M140,100 Q170,95 180,110"
+          stroke="#8e89b9"
+          stroke-width="2"
+          fill="none"
+        />
+        <path
+          class="ear-detail"
+          d="M135,115 Q165,110 175,125"
+          stroke="#8e89b9"
+          stroke-width="2"
+          fill="none"
+        />
+        <path
+          class="ear-detail"
+          d="M130,130 Q155,125 170,140"
+          stroke="#8e89b9"
+          stroke-width="1.5"
+          fill="none"
+        />
+        <path
+          class="ear-inner"
+          d="M145,110 Q165,108 175,115"
+          stroke="#a8a4c9"
+          stroke-width="3"
+          fill="none"
+          opacity="0.7"
+        />
 
-            <!-- Enhanced eyes with more expression and eyelashes -->
-            <g class="eye-group left-eye-group">
-                <circle class="elephant-eye left-eye" cx="105" cy="130" r="10" fill="white" />
-                <circle class="elephant-eye-pupil left-pupil" cx="105" cy="130" r="3" fill="#222" />
-                <circle class="eye-highlight left-highlight" cx="104" cy="129" r="1.5" fill="white" />
-                <path class="eyelash" d="M100,125 Q102,123 104,125" stroke="#6c70a3" stroke-width="1.5" fill="none" />
-                <path class="eyelash" d="M108,125 Q110,123 112,125" stroke="#6c70a3" stroke-width="1.5" fill="none" />
-            </g>
-            <g class="eye-group right-eye-group">
-                <circle class="elephant-eye right-eye" cx="135" cy="130" r="10" fill="white" />
-                <circle class="elephant-eye-pupil right-pupil" cx="135" cy="130" r="3" fill="#222" />
-                <circle class="eye-highlight right-highlight" cx="134" cy="129" r="1.5" fill="white" />
-                <path class="eyelash" d="M130,125 Q132,123 134,125" stroke="#6c70a3" stroke-width="1.5" fill="none" />
-                <path class="eyelash" d="M138,125 Q140,123 142,125" stroke="#6c70a3" stroke-width="1.5" fill="none" />
-            </g>
+        <!-- Enhanced eyes with more expression and eyelashes -->
+        <g class="eye-group left-eye-group">
+          <circle
+            class="elephant-eye left-eye"
+            cx="105"
+            cy="130"
+            r="10"
+            fill="white"
+          />
+          <circle
+            class="elephant-eye-pupil left-pupil"
+            cx="105"
+            cy="130"
+            r="3"
+            fill="#222"
+          />
+          <circle
+            class="eye-highlight left-highlight"
+            cx="104"
+            cy="129"
+            r="1.5"
+            fill="white"
+          />
+          <path
+            class="eyelash"
+            d="M100,125 Q102,123 104,125"
+            stroke="#6c70a3"
+            stroke-width="1.5"
+            fill="none"
+          />
+          <path
+            class="eyelash"
+            d="M108,125 Q110,123 112,125"
+            stroke="#6c70a3"
+            stroke-width="1.5"
+            fill="none"
+          />
+        </g>
+        <g class="eye-group right-eye-group">
+          <circle
+            class="elephant-eye right-eye"
+            cx="135"
+            cy="130"
+            r="10"
+            fill="white"
+          />
+          <circle
+            class="elephant-eye-pupil right-pupil"
+            cx="135"
+            cy="130"
+            r="3"
+            fill="#222"
+          />
+          <circle
+            class="eye-highlight right-highlight"
+            cx="134"
+            cy="129"
+            r="1.5"
+            fill="white"
+          />
+          <path
+            class="eyelash"
+            d="M130,125 Q132,123 134,125"
+            stroke="#6c70a3"
+            stroke-width="1.5"
+            fill="none"
+          />
+          <path
+            class="eyelash"
+            d="M138,125 Q140,123 142,125"
+            stroke="#6c70a3"
+            stroke-width="1.5"
+            fill="none"
+          />
+        </g>
 
-            <!-- Enhanced trunk with more detail and animation -->
-            <path class="elephant-trunk" d="M120,155
+        <!-- Enhanced trunk with more detail and animation -->
+        <path
+          class="elephant-trunk"
+          d="M120,155
                      C110,175 105,195 110,215
                      Q115,235 125,245
                      Q135,235 132,215
-                     C132,195 128,175 120,155" fill="url(#trunkGradient)" stroke="#777bb4" stroke-width="2" />
+                     C132,195 128,175 120,155"
+          fill="url(#trunkGradient)"
+          stroke="#777bb4"
+          stroke-width="2"
+        />
 
-            <!-- Trunk details and segments -->
-            <path class="trunk-detail" d="M115,180 Q125,185 125,175" stroke="#777bb4" stroke-width="1.5" fill="none" />
-            <path class="trunk-detail" d="M115,200 Q125,205 125,195" stroke="#777bb4" stroke-width="1.5" fill="none" />
-            <path class="trunk-detail" d="M115,220 Q125,225 125,215" stroke="#777bb4" stroke-width="1.5" fill="none" />
-            <path class="trunk-tip" d="M122,245 Q125,248 128,245" stroke="#6c70a3" stroke-width="2" fill="none" />
+        <!-- Trunk details and segments -->
+        <path
+          class="trunk-detail"
+          d="M115,180 Q125,185 125,175"
+          stroke="#777bb4"
+          stroke-width="1.5"
+          fill="none"
+        />
+        <path
+          class="trunk-detail"
+          d="M115,200 Q125,205 125,195"
+          stroke="#777bb4"
+          stroke-width="1.5"
+          fill="none"
+        />
+        <path
+          class="trunk-detail"
+          d="M115,220 Q125,225 125,215"
+          stroke="#777bb4"
+          stroke-width="1.5"
+          fill="none"
+        />
+        <path
+          class="trunk-tip"
+          d="M122,245 Q125,248 128,245"
+          stroke="#6c70a3"
+          stroke-width="2"
+          fill="none"
+        />
 
-            <!-- Trunk nostrils -->
-            <ellipse class="nostril" cx="123" cy="243" rx="1.5" ry="2" fill="#6c70a3" />
-            <ellipse class="nostril" cx="127" cy="243" rx="1.5" ry="2" fill="#6c70a3" />
+        <!-- Trunk nostrils -->
+        <ellipse
+          class="nostril"
+          cx="123"
+          cy="243"
+          rx="1.5"
+          ry="2"
+          fill="#6c70a3"
+        />
+        <ellipse
+          class="nostril"
+          cx="127"
+          cy="243"
+          rx="1.5"
+          ry="2"
+          fill="#6c70a3"
+        />
 
-            <!-- Enhanced legs with more realistic shape and details -->
-            <g class="elephant-legs">
-                <rect class="elephant-leg front-left" x="150" y="225" width="18" height="50" rx="8" ry="8"
-                    fill="url(#elephantGradient)" />
-                <rect class="elephant-leg front-right" x="175" y="225" width="18" height="50" rx="8" ry="8"
-                    fill="url(#elephantGradient)" />
-                <rect class="elephant-leg back-left" x="200" y="225" width="18" height="50" rx="8" ry="8"
-                    fill="url(#elephantGradient)" />
-                <rect class="elephant-leg back-right" x="225" y="225" width="18" height="50" rx="8" ry="8"
-                    fill="url(#elephantGradient)" />
+        <!-- Enhanced legs with more realistic shape and details -->
+        <g class="elephant-legs">
+          <rect
+            class="elephant-leg front-left"
+            x="150"
+            y="225"
+            width="18"
+            height="50"
+            rx="8"
+            ry="8"
+            fill="url(#elephantGradient)"
+          />
+          <rect
+            class="elephant-leg front-right"
+            x="175"
+            y="225"
+            width="18"
+            height="50"
+            rx="8"
+            ry="8"
+            fill="url(#elephantGradient)"
+          />
+          <rect
+            class="elephant-leg back-left"
+            x="200"
+            y="225"
+            width="18"
+            height="50"
+            rx="8"
+            ry="8"
+            fill="url(#elephantGradient)"
+          />
+          <rect
+            class="elephant-leg back-right"
+            x="225"
+            y="225"
+            width="18"
+            height="50"
+            rx="8"
+            ry="8"
+            fill="url(#elephantGradient)"
+          />
 
-                <!-- Leg wrinkles -->
-                <path class="leg-wrinkle" d="M152,245 L166,245" stroke="#777bb4" stroke-width="0.8" opacity="0.5" />
-                <path class="leg-wrinkle" d="M177,245 L191,245" stroke="#777bb4" stroke-width="0.8" opacity="0.5" />
-                <path class="leg-wrinkle" d="M202,245 L216,245" stroke="#777bb4" stroke-width="0.8" opacity="0.5" />
-                <path class="leg-wrinkle" d="M227,245 L241,245" stroke="#777bb4" stroke-width="0.8" opacity="0.5" />
+          <!-- Leg wrinkles -->
+          <path
+            class="leg-wrinkle"
+            d="M152,245 L166,245"
+            stroke="#777bb4"
+            stroke-width="0.8"
+            opacity="0.5"
+          />
+          <path
+            class="leg-wrinkle"
+            d="M177,245 L191,245"
+            stroke="#777bb4"
+            stroke-width="0.8"
+            opacity="0.5"
+          />
+          <path
+            class="leg-wrinkle"
+            d="M202,245 L216,245"
+            stroke="#777bb4"
+            stroke-width="0.8"
+            opacity="0.5"
+          />
+          <path
+            class="leg-wrinkle"
+            d="M227,245 L241,245"
+            stroke="#777bb4"
+            stroke-width="0.8"
+            opacity="0.5"
+          />
 
-                <!-- Toenails -->
-                <circle class="toenail" cx="159" cy="265" r="2" fill="#8e89b9" />
-                <circle class="toenail" cx="184" cy="265" r="2" fill="#8e89b9" />
-                <circle class="toenail" cx="209" cy="265" r="2" fill="#8e89b9" />
-                <circle class="toenail" cx="234" cy="265" r="2" fill="#8e89b9" />
-            </g>
+          <!-- Toenails -->
+          <circle class="toenail" cx="159" cy="265" r="2" fill="#8e89b9" />
+          <circle class="toenail" cx="184" cy="265" r="2" fill="#8e89b9" />
+          <circle class="toenail" cx="209" cy="265" r="2" fill="#8e89b9" />
+          <circle class="toenail" cx="234" cy="265" r="2" fill="#8e89b9" />
+        </g>
 
-            <!-- Enhanced tail with more movement -->
-            <path class="elephant-tail-unified" d="M300,200 C310,210 330,220 325,230 S315,250 320,260" stroke="#777bb4"
-                stroke-width="4" fill="none" stroke-linecap="round" />
-            <path class="tail-tuft" d="M313,253 Q315,257 317,253 Q315,255 313,253" fill="#8e89b9" />
+        <!-- Enhanced tail with more movement -->
+        <path
+          class="elephant-tail-unified"
+          d="M300,200 C310,210 330,220 325,230 S315,250 320,260"
+          stroke="#777bb4"
+          stroke-width="4"
+          fill="none"
+          stroke-linecap="round"
+        />
+        <path
+          class="tail-tuft"
+          d="M313,253 Q315,257 317,253 Q315,255 313,253"
+          fill="#8e89b9"
+        />
 
-            <!-- Enhanced tusks -->
-            <path class="elephant-tusk left-tusk" d="M110,160 Q100,170 105,180" stroke="#f5f5f5" stroke-width="5"
-                fill="none" stroke-linecap="round" />
-            <path class="elephant-tusk right-tusk" d="M130,160 Q140,170 135,180" stroke="#f5f5f5" stroke-width="5"
-                fill="none" stroke-linecap="round" />
-        </svg>
+        <!-- Enhanced tusks -->
+        <path
+          class="elephant-tusk left-tusk"
+          d="M110,160 Q100,170 105,180"
+          stroke="#f5f5f5"
+          stroke-width="5"
+          fill="none"
+          stroke-linecap="round"
+        />
+        <path
+          class="elephant-tusk right-tusk"
+          d="M130,160 Q140,170 135,180"
+          stroke="#f5f5f5"
+          stroke-width="5"
+          fill="none"
+          stroke-linecap="round"
+        />
+      </svg>
     </div>
 
     <!-- Door Container moved to About section -->
 
     <!-- Enhanced JavaScript for better interactivity -->
     <script src="/app.js" defer></script>
-</body>
-
+  </body>
 </html>
